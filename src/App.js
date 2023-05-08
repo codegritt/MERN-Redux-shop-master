@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <>
         <BrowserRouter>
-          {/* <Appheader /> */}
+          <Appheader />
           <div className="App">
             <div className={AppHome.appHome}>
               <Header1 />

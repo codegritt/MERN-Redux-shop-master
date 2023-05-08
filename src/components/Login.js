@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import Moverlay__ from "./Login.module.css";
@@ -47,7 +47,7 @@ const Login = () => {
               toast.success("Success");
               sessionStorage.setItem("username", username);
               sessionStorage.setItem("userrole", resp.role);
-              usenavigate("/home");
+              usenavigate("/");
             } else {
               toast.error("Please Enter valid credentials");
             }
@@ -81,7 +81,7 @@ const Login = () => {
             toast.success("Success");
             sessionStorage.setItem("username", username);
             sessionStorage.setItem("jwttoken", resp.jwtToken);
-            usenavigate("/home");
+            usenavigate("/");
           }
           // if (Object.keys(resp).length === 0) {
           //     toast.error('Please Enter valid username');
