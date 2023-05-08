@@ -1,0 +1,6 @@
+.form-control {
+  position: relative;
+  bottom: 20px;
+  height: 30px;
+  border-radius: 0;
+}

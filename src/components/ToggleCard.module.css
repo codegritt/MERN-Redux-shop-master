@@ -1,0 +1,675 @@
+.label {
+  display: block;
+  position: absolute;
+  top: 37.5%;
+  left: 85%;
+  width: 260px;
+  height: 350px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.flip_card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  border: 3px solid lightgray;
+}
+
+.flip_card .front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #fff;
+  backface-visibility: hidden;
+}
+
+.flip_card .back {
+  transform: rotateX(180deg);
+  color: #000;
+  background: #fff;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #fff;
+  backface-visibility: hidden;
+}
+
+.label:hover .flip_card {
+  transform: rotateX(2deg);
+  box-shadow: 0 20px 20px rgba(50, 60, 60, 0.2);
+}
+
+.flip_card {
+  transform: rotateX(2deg);
+  box-shadow: 0 20px 20px rgba(50, 60, 60, 0.2);
+}
+
+input {
+  display: none;
+}
+
+.flip_card {
+  transform: rotateX(180deg);
+}
+.label:hover :checked + .flip_card {
+  transform: rotateX(175deg);
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+.widgetImage {
+  background-position: 239px -7px;
+  width: 260px;
+  height: 129px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.commonFreeCharge {
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1.45;
+  text-align: center;
+  color: #666666;
+}
+
+.snapbutton {
+  margin: 30px auto;
+  border-color: #333;
+  background: #333;
+  border-radius: 3px;
+  display: inline-block;
+  height: 35px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-out 0s;
+  font-weight: 500;
+  position: relative;
+
+  width: 66.66667%;
+  margin-top: 30px;
+}
+
+.controls {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.newUserRegister {
+  font-size: 11px;
+  color: #999999;
+  display: inline-block;
+  padding-right: 13px;
+  line-height: 36px;
+  cursor: pointer;
+  width: 58.33333%;
+}
+
+.registerNbaLink {
+  color: #25a8ed;
+  cursor: pointer;
+  padding-left: 3px;
+}
+
+.rfloat {
+  font-size: 12px;
+  color: #999;
+
+  background: #f4f4f4;
+  color: #333;
+  border-radius: 3px;
+  display: inline-block;
+  height: 35px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-out 0s;
+  font-weight: 500;
+  width: 33.33333%;
+  position: relative;
+  background-color: #e40046;
+}
+
+.sidebar2 {
+  position: relative;
+  right: 0;
+  margin-right: 100px;
+  width: 245px;
+  justify-content: center;
+  flex: 0.2;
+  background-color: white;
+  height: fit-content;
+  margin-top: 11px;
+  box-shadow: 10px 10px 10px gray;
+
+  font-size: 13px;
+  color: gray;
+  cursor: pointer;
+  line-height: 30px;
+  padding: 5px;
+  padding-left: 10px;
+  text-align: center;
+
+  opacity: 1;
+  z-index: 4;
+  pointer-events: auto;
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 0.5s ease-out 0s;
+
+  background: #fff;
+  /* height: 100%;
+      width: 100%; */
+  height: 340px;
+  border-radius: 4px;
+  text-align: center;
+  /* overflow: hidden;
+      position: absolute;
+      opacity: 0;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      pointer-events: auto;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d; */
+
+  background-color: #fff;
+  border: solid 0.9px #e5e5e5;
+  border-radius: 3px;
+}
+
+.sidebar2spanD {
+  font-size: 12px;
+  font-weight: normal;
+  color: #999999;
+  padding-bottom: 4px;
+}
+
+.sidebar2content {
+  align-items: center;
+  justify-content: center;
+
+  /* height: 2px;
+      background-color: #eaeaea;
+      width: 19px;
+      margin: 11px auto; */
+}
+
+.sidebar2span {
+  /* font-weight: bold;
+      font-size: 0.9em; */
+
+  font-size: 11.5px;
+  font-weight: normal;
+  line-height: 1.59;
+  text-align: center;
+  color: #5a5a59;
+  padding-left: 18px;
+  padding-right: 13px;
+}
+
+.sidebar__Input {
+  /* display: flex;
+      padding: 10px;
+      align-items: center;
+      height: 12px;
+      color: gray;
+      background-color: #eef3f8;
+      width: 90%;
+      outline: none;
+    
+      background: none; */
+  height: 35px;
+  padding: 3px 0px 6px 9px;
+  line-height: 16px;
+  font-size: 12px;
+  line-height: 1.47;
+  color: #999999;
+  width: 213px;
+  border-radius: 1.9px;
+  background-color: #fbfbfb;
+  border: solid 1px #e5e5e5;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  line-height: normal;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.sidebar2img {
+  display: flex;
+  object-fit: contain;
+  /* width: 100%;
+        height: 200px; */
+  /* margin-right: 10px; */
+
+  background-position: -5px -4px;
+  width: 100%;
+  height: 30%;
+  margin: 30px auto 30px;
+}
+
+.sidebar2button {
+  /* padding-top: 10px; */
+
+  position: relative;
+  top: 15px;
+  width: 100%;
+  padding-top: 20px;
+  width: 100%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.sidebar2Searchbutton {
+  /* background-color: #3f3f3f;
+      color: white;
+      width: 100px;
+      border-radius: 3px;
+      height: 30px; */
+
+  font-size: 12px;
+  border-color: #333;
+  background: #333;
+  border-radius: 3px;
+  display: inline-block;
+  height: 35px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-out 0s;
+  font-weight: 500;
+  overflow: hidden;
+  position: relative;
+  background-color: #3f3f3f;
+  width: 60%;
+  float: left;
+  right: 0px;
+  top: 25px;
+}
+
+.sidebar2Nextbutton {
+  /* color: gray;
+      width: 100px;
+      border-radius: 3px;
+      height: 30px;
+      border: none; */
+  font-size: 12px;
+  float: right;
+  background: #f4f4f4;
+  color: #b2b2b2;
+  border-radius: 3px;
+  display: inline-block;
+  height: 35px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-out 0s;
+  font-weight: 500;
+  overflow: hidden;
+  position: relative;
+  background-color: #f4f4f4;
+  width: 29.16667%;
+  top: 25px;
+  right: 10px;
+}
+
+.pincodeActnWidget {
+  opacity: 1;
+  z-index: 4;
+  pointer-events: auto;
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 0.5s ease-out 0s;
+  margin: 0px;
+  background-color: #fff;
+  border: solid 0.9px #e5e5e5;
+  border-radius: 3px;
+
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  opacity: 2;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.deliveryPin {
+  font-size: 12px;
+  font-weight: normal;
+  color: #999999;
+  padding-bottom: 4px;
+}
+
+.dashPincode {
+  height: 2px;
+  background-color: #eaeaea;
+  width: 19px;
+  margin: 11px auto;
+}
+
+.letDelivr {
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1.59;
+  text-align: center;
+  color: #5a5a59;
+  padding-left: 18px;
+  padding-right: 13px;
+}
+
+.checkavail {
+  padding: 0;
+  margin-top: 10px;
+}
+
+.inputtext {
+  height: 35px;
+  padding: 3px 0px 6px 9px;
+  line-height: 16px;
+  font-size: 12px;
+  line-height: 1.47;
+  color: #999999;
+  width: 213px;
+  border-radius: 1.9px;
+  background-color: #fbfbfb;
+  border: solid 1px #e5e5e5;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  line-height: normal;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.nbaPincode {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #5a5a59;
+  cursor: pointer;
+  display: none !important;
+  visibility: hidden !important;
+  display: none;
+  padding-top: 20px;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.errorPincodehidden {
+  color: red;
+  font-size: 12px;
+  padding: 5px;
+  display: none !important;
+  visibility: hidden !important;
+  display: none;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.nextBestActionControls {
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  padding-top: 20px;
+  float: left;
+}
+
+.pincodeNbaSubmit {
+  font-size: 12px;
+  border-color: #333;
+  background: #333;
+  border-radius: 3px;
+  display: inline-block;
+  height: 35px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-out 0s;
+  font-weight: 500;
+  overflow: hidden;
+  position: relative;
+  background-color: #e40046;
+  width: 66.66667%;
+}
+
+.pincodeSkipSubmit {
+  font-size: 12px;
+  color: #999;
+  background: #f4f4f4;
+  color: #333;
+  border-radius: 3px;
+  display: inline-block;
+  height: 35px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-out 0s;
+  font-weight: 500;
+  overflow: hidden;
+  position: relative;
+  background-color: #e40046;
+  width: 29.16667%;
+}
+
+@media screen and (max-width: 992px) {
+  .sidebar2 {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .label {
+    display: none;
+  }
+
+  .checkavail {
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .sidebar__Input {
+    /* display: flex;
+      padding: 10px;
+      align-items: center;
+      height: 12px;
+      color: gray;
+      background-color: #eef3f8;
+      width: 90%;
+      outline: none;
+    
+      background: none; */
+    height: 20px;
+    padding: 3px 0px 6px 9px;
+    line-height: 16px;
+    font-size: 12px;
+    line-height: 1.47;
+    color: #999999;
+    width: 180px;
+    border-radius: 1.9px;
+    background-color: #fbfbfb;
+    border: solid 1px #e5e5e5;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    line-height: normal;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+  }
+
+  .sidebar2Searchbutton {
+    /* background-color: #3f3f3f;
+      color: white;
+      width: 100px;
+      border-radius: 3px;
+      height: 30px; */
+
+    font-size: 12px;
+    border-color: #333;
+    background: #333;
+    border-radius: 3px;
+    display: inline-block;
+    height: 35px;
+    line-height: 36px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-out 0s;
+    font-weight: 500;
+    overflow: hidden;
+    position: relative;
+    background-color: #3f3f3f;
+    width: 66.66667%;
+    float: left;
+    right: 7px;
+  }
+
+  .sidebar2Nextbutton {
+    /* color: gray;
+      width: 100px;
+      border-radius: 3px;
+      height: 30px;
+      border: none; */
+    font-size: 12px;
+    background: #f4f4f4;
+    color: #b2b2b2;
+    border-radius: 3px;
+    display: inline-block;
+    height: 35px;
+    line-height: 36px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-out 0s;
+    font-weight: 500;
+    overflow: hidden;
+    position: relative;
+    background-color: #f4f4f4;
+    width: 29.16667%;
+    bottom: 30px;
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .label {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .label {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .label {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .label {
+    display: none;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .label {
+    display: none;
+  }
+}

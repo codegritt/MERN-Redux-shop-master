@@ -1,0 +1,51 @@
+.reduxhome_box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.reduxhome_headtext {
+  color: gray;
+  position: relative;
+  bottom: 550px;
+  left: 100px;
+  font-size: 30px;
+}
+
+.reduxhome_card {
+  width: 280px;
+  position: relative;
+  bottom: 550px;
+  left: 100px;
+}
+
+.reduxhome_card {
+  color: black;
+  font-weight: 400;
+}
+
+.reduxhome_image {
+  color: black;
+  font-weight: 400;
+  width: 250px;
+}
+
+.reduxhome_title {
+  color: black;
+  font-weight: 400;
+}
+
+.redux_plusicon {
+  font-size: 1.2em;
+  background-color: #d1203c;
+  color: white;
+  cursor: pointer;
+}
+
+.redux_button {
+  position: relative;
+  left: 120px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}

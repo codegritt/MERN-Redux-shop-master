@@ -1,0 +1,219 @@
+.sidebar {
+  position: relative;
+  bottom: 40px;
+  flex: 0.15;
+  text-align: center;
+  height: fit-content;
+
+  margin-top: 10px;
+  left: 100px;
+  box-shadow: 10px 10px 10px gray;
+  background-color: white;
+}
+
+.sidebarwhole {
+  width: 200px;
+}
+
+.sidebar__leftlist {
+  display: flex;
+  font-size: 13px;
+  color: gray;
+  cursor: pointer;
+  line-height: 30px;
+
+  padding-left: 10px;
+}
+
+.sidebarHeader {
+  display: flex;
+  color: gray;
+  cursor: pointer;
+  background-color: white;
+  padding-left: 10px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.sidebar__top {
+  text-align: left;
+  background-color: white;
+  font-weight: bold;
+}
+
+.sidebar__top :hover {
+  background-color: whitesmoke;
+
+  cursor: pointer;
+  color: red;
+}
+
+@media only screen and (max-width: 992px) {
+  .sidebar {
+    position: relative;
+    top: 0px;
+    flex: 0.15;
+    text-align: center;
+    height: fit-content;
+    margin-top: 10px;
+    left: 90px;
+    box-shadow: 10px 10px 10px gray;
+  }
+
+  .sidebar__top {
+    text-align: left;
+    font-size: 11px;
+    background-color: white;
+
+    font-weight: bold;
+  }
+
+  .sidebarHeader {
+    display: flex;
+    color: gray;
+    cursor: pointer;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .sidebar {
+    position: relative;
+    top: 0px;
+    flex: 0.15;
+    text-align: center;
+    height: fit-content;
+    margin-top: 10px;
+    left: 10px;
+    box-shadow: 10px 10px 10px gray;
+  }
+
+  .sidebar__leftlist {
+    display: flex;
+    font-size: 7px;
+    color: gray;
+    cursor: pointer;
+    line-height: 10px;
+    padding: 5px;
+    padding-left: 10px;
+  }
+
+  .sidebarHeader {
+    display: flex;
+    color: gray;
+    cursor: pointer;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .sidebar {
+    position: relative;
+    top: 0px;
+    flex: 0.15;
+    text-align: center;
+    height: fit-content;
+
+    margin-top: 10px;
+    left: 20px;
+    box-shadow: 10px 10px 10px gray;
+  }
+
+  .sidebarwhole {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .products_h3 {
+    position: relative;
+    float: right;
+    right: 250px;
+    bottom: 185px;
+    color: gray;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .sidebar__leftlist {
+    display: flex;
+    font-size: 11px;
+    color: gray;
+    cursor: pointer;
+    line-height: 12px;
+    padding: 5px;
+    padding-left: 10px;
+  }
+
+  .sidebarHeader {
+    display: flex;
+    color: gray;
+    cursor: pointer;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    line-height: 10px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .products_h3 {
+    position: relative;
+    float: right;
+    right: 250px;
+    bottom: 185px;
+    color: gray;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 414px) {
+  .sidebar__leftlist {
+    display: flex;
+    font-size: 8px;
+    color: gray;
+    cursor: pointer;
+    line-height: 10px;
+    padding: 5px;
+    padding-left: 10px;
+  }
+
+  .sidebarHeader {
+    display: flex;
+    color: gray;
+    cursor: pointer;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 9px;
+    line-height: 10px;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 375px) {
+  .sidebar__leftlist {
+    display: flex;
+    font-size: 8px;
+    color: gray;
+    cursor: pointer;
+    line-height: 10px;
+    padding: 5px;
+    padding-left: 10px;
+  }
+
+  .sidebarHeader {
+    display: flex;
+    color: gray;
+    cursor: pointer;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 9px;
+    line-height: 10px;
+  }
+}

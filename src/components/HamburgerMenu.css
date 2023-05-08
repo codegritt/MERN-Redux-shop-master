@@ -1,0 +1,76 @@
+#menuToggle {
+  display: block;
+  position: relative;
+  bottom: 45px;
+  left: 250px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin-bottom: 3px;
+  position: relative;
+  top: 5px;
+
+  background: white;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle:hover {
+  color: #e40046;
+  height: 30px;
+  width: 30px;
+}
+
+#menuToggle span:hover {
+  color: #e40046;
+}
+
+@media only screen and (max-width: 1200px) {
+  #menuToggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #menuToggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #menuToggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #menuToggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #menuToggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #menuToggle {
+    display: none;
+  }
+}

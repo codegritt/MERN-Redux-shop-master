@@ -1,0 +1,9 @@
+.appHome {
+  background-color: #f3f2ef;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app__body {
+  display: flex;
+}
