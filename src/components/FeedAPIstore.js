@@ -5,6 +5,7 @@ import Products__img from "./FeedAPIstore.module.css";
 import Products__card from "./FeedAPIstore.module.css";
 import Products__cardesc from "./FeedAPIstore.module.css";
 import Products_h3 from "./FeedAPIstore.module.css";
+import Products__price from "./FeedAPIstore.module.css";
 
 const FeedAPIstore = () => {
   const [loading, setLoading] = useState(false);
@@ -30,7 +31,7 @@ const FeedAPIstore = () => {
         {loading && (
           <div>
             {""}
-            <h2>Loading...</h2>
+            <h3>Loading...</h3>
           </div>
         )}
         {data.map((product) => (
@@ -45,7 +46,10 @@ const FeedAPIstore = () => {
 
             <div className={Products__cardesc.products__cardesc}>
               <h6>{product.title}</h6>
-              <h6>{`Price: ${product.price}`}</h6>
+
+              <span className={Products__price.products__price}>
+                {`Price: ${product.price}`}
+              </span>
             </div>
           </div>
         ))}

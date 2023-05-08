@@ -6,8 +6,12 @@
   justify-items: center;
   padding: 10px;
   position: relative;
-  left: 320px;
-  bottom: 150px;
+  left: 300px;
+  bottom: 430px;
+}
+
+.products__price {
+  font-weight: bold;
 }
 
 .products__img {
@@ -36,10 +40,10 @@
 
 .products_h3 {
   position: relative;
-
+  font-size: 30px;
   float: right;
-  right: 860px;
-  bottom: 185px;
+  right: 880px;
+  bottom: 500px;
   color: gray;
 }
 

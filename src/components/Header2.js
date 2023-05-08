@@ -10,23 +10,19 @@ import LoginModal from "./LoginModal";
 import CartModal from "./CartModal";
 import header2imga from "./Header2.module.css";
 import header2__rightbuttons from "./Header2.module.css";
+import { Link } from "react-router-dom";
 
 function Header2() {
   return (
     <>
       <div className={header2Left.header2__left}>
-        <a
-          className={header2imga.header2__left_imga}
-          href="https://www.snapdeal.com"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <Link className={header2imga.header2__left_imga} to="/">
           <img
             className={header2img.header2__left_img}
             src="https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg"
             alt=""
           />
-        </a>
+        </Link>
 
         <div className={headerSearch.header__search}>
           <input

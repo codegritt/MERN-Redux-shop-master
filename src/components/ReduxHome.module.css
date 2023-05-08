@@ -17,6 +17,12 @@
   position: relative;
   bottom: 550px;
   left: 100px;
+  padding: 10px;
+}
+
+.reduxhome_card:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
 }
 
 .reduxhome_card {
@@ -36,16 +42,16 @@
 }
 
 .redux_plusicon {
-  font-size: 1.2em;
+  font-size: 1.1em;
   background-color: #d1203c;
   color: white;
   cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
 
 .redux_button {
   position: relative;
   left: 120px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
 }
