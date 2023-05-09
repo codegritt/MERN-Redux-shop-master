@@ -161,6 +161,12 @@ const Login = () => {
               User Name <span className="errmsg">*</span>
             </label>
             <input
+              style={{
+                position: "relative",
+                bottom: "20px",
+                height: "30px",
+                fontSize: "14px",
+              }}
               value={username}
               onChange={(e) => usernameupdate(e.target.value)}
               className="form-control"
@@ -169,24 +175,29 @@ const Login = () => {
               Password <span className="errmsg">*</span>
             </label>
             <input
+              style={{
+                position: "relative",
+                bottom: "20px",
+                height: "30px",
+                fontSize: "14px",
+              }}
               type="password"
               value={password}
               onChange={(e) => passwordupdate(e.target.value)}
               className="form-control"
             ></input>
-            <div className="card-footer">
-              <button type="submit" className={MLogin__btn.Mlogin__btnn}>
-                Login
-              </button>{" "}
-              {/* <Link
+            {/* <div className="card-footer"> */}
+            <button type="submit" className={MLogin__btn.Mlogin__btnn}>
+              Login
+            </button>{" "}
+            {/* <Link
                 className="btn btn-success"
                 to={"/register"}
                 style={{ position: "relative", top: "12px", left: "10px" }}
               >
                 Sign Up
               </Link> */}
-            </div>
-
+            {/* </div> */}
             <p className={Mtermsandcond__.Mtermsandcon}></p>
           </div>
         </form>

@@ -70,7 +70,17 @@ export default function ToggleCard() {
 
           <div className={Checkavail.checkavail}>
             <input
-              className={sidebarInput.sidebar__Input}
+              style={{
+                width: "75%",
+                height: "20px",
+                position: "relative",
+                top: "0px",
+                left: "30px",
+                fontSize: "12px",
+                textAlign: "center",
+              }}
+              // className={sidebarInput.sidebar__Input}
+              className="form-control"
               type="text"
               placeholder="Enter pincode"
             />

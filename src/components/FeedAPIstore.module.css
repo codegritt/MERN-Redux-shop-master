@@ -7,7 +7,7 @@
   padding: 10px;
   position: relative;
   left: 300px;
-  bottom: 430px;
+  bottom: 500px;
 }
 
 .products__price {
@@ -43,7 +43,7 @@
   font-size: 30px;
   float: right;
   right: 880px;
-  bottom: 500px;
+  bottom: 600px;
   color: gray;
 }
 

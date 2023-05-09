@@ -26,8 +26,14 @@ function Header2() {
 
         <div className={headerSearch.header__search}>
           <input
-            // className="form-control"
-            className={headerSearchInput.header__search_Input}
+            style={{
+              height: "20px",
+              position: "relative",
+              top: "0px",
+              fontSize: "15px",
+            }}
+            className="form-control"
+            // className={headerSearchInput.header__search_Input}
             type="text"
             placeholder="Search for products & brands"
           />

@@ -54,7 +54,7 @@
 
   position: relative;
 
-  left: 48%;
+  left: 49%;
   bottom: 140px;
 
   width: 20%;
@@ -101,7 +101,7 @@
   cursor: pointer;
   border-radius: 5px;
   position: relative;
-  top: 15px;
+  bottom: 0px;
 }
 
 .Mlogin__span {
