@@ -1,0 +1,45 @@
+.contextdiv {
+  position: relative;
+  top: 350px;
+  right: 100px;
+  background-color: #d1203c;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px gray;
+  width: 300px;
+  height: 100px;
+}
+
+.contextdiv:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+.contexthead {
+  color: whitesmoke;
+  text-align: right;
+  font-family: cursive;
+  font-size: 13px;
+  font-weight: bold;
+  position: relative;
+  bottom: 110px;
+  right: 10px;
+}
+
+.contextspan {
+  color: black;
+  position: relative;
+  bottom: 100px;
+  left: 115px;
+  font-family: cursive;
+  color: whitesmoke;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.contextspan:hover {
+  color: yellow;
+}
+
+.contextimg {
+  width: 88px;
+}

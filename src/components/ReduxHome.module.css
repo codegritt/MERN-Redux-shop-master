@@ -18,16 +18,13 @@
   bottom: 700px;
   left: 95px;
   padding: 10px;
+  color: black;
+  font-weight: 400;
 }
 
 .reduxhome_card:hover {
   transform: scale(1.1);
   transition: all 0.2s ease;
-}
-
-.reduxhome_card {
-  color: black;
-  font-weight: 400;
 }
 
 .reduxhome_image {

@@ -11,6 +11,8 @@ import CartModal from "./CartModal";
 import header2imga from "./Header2.module.css";
 import header2__rightbuttons from "./Header2.module.css";
 import { Link } from "react-router-dom";
+import Autocomplete from "./AutoComplete";
+import { autoCompleteData } from "./data";
 
 function Header2() {
   return (
@@ -25,7 +27,7 @@ function Header2() {
         </Link>
 
         <div className={headerSearch.header__search}>
-          <input
+          {/* <input
             style={{
               height: "20px",
               position: "relative",
@@ -33,10 +35,11 @@ function Header2() {
               fontSize: "15px",
             }}
             className="form-control"
-            // className={headerSearchInput.header__search_Input}
             type="text"
             placeholder="Search for products & brands"
-          />
+          /> */}
+
+          <Autocomplete data={autoCompleteData} />
         </div>
 
         <div className={headerSearchButtonClass.header__searchbuttonClass}>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext } from "react";
 import AppHome from "./Home.module.css";
 import App__body from "./Home.module.css";
 import Sidebar from "./Sidebar";
@@ -13,6 +13,9 @@ import Footer1 from "./Footer1";
 import Footer4 from "./Footer4";
 import Footer2 from "./Footer2";
 import Footer3 from "./Footer3";
+import UseContextHook from "./Hooks/UseContextHook";
+
+export const BooksContext = createContext();
 
 function Home() {
   return (
@@ -21,6 +24,11 @@ function Home() {
         <Sidebar />
         <Feed />
         <ToggleCard />
+        <BooksContext.Provider value={true}>
+          <div>
+            <UseContextHook />
+          </div>
+        </BooksContext.Provider>
       </div>
       <div className={Main__body.main__body}>
         <ReduxHome />
