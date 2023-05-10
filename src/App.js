@@ -42,7 +42,6 @@ export const App = () => {
           </Routes>
         </div>
       </BrowserRouter>
-      {/* <AnimatedRoutes /> */}
     </>
   );
 };
