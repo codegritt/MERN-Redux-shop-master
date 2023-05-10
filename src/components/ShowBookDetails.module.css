@@ -1,0 +1,11 @@
+.showBookDetailsmod {
+  background-color: whitesmoke;
+  color: gray;
+}
+
+.showBookDetailsbut {
+  background-color: #c6003d;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px;
+}

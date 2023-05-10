@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import "../App.css";
 import axios from "axios";
+import ShowBookDetailsmod from "./ShowBookDetails.module.css";
+import ShowBookDetailsbut from "./ShowBookDetails.module.css";
+import ShowBookDetailsdel from "./ShowBookDetails.module.css";
 
 function ShowBookDetails(props) {
   const [book, setBook] = useState({});
@@ -71,12 +74,12 @@ function ShowBookDetails(props) {
   );
 
   return (
-    <div className="ShowBookDetails">
+    <div className={ShowBookDetailsmod.showBookDetailsmod}>
       <div className="container">
         <div className="row">
           <div className="col-md-10 m-auto">
             <br /> <br />
-            <Link to="/home2" className="btn btn-outline-warning float-left">
+            <Link to="/home2" className={ShowBookDetailsbut.showBookDetailsbut}>
               Show Book List
             </Link>
           </div>
@@ -89,7 +92,7 @@ function ShowBookDetails(props) {
           <div className="col-md-10 m-auto">{BookItem}</div>
           <div className="col-md-6 m-auto">
             <button
-              type="button"
+              style={{ backgroundColor: "#c6003d" }}
               className="btn btn-outline-danger btn-lg btn-block"
               onClick={() => {
                 onDeleteClick(book._id);
@@ -102,6 +105,7 @@ function ShowBookDetails(props) {
             <Link
               to={`/edit-book/${book._id}`}
               className="btn btn-outline-info btn-lg btn-block"
+              style={{ backgroundColor: "#c6003d" }}
             >
               Edit Book
             </Link>

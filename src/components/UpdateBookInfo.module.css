@@ -1,0 +1,19 @@
+.updateBookInfomod {
+  background-color: whitesmoke;
+  color: gray;
+}
+
+.updateBookInfobut {
+  background-color: #c6003d;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.updateBookInfosub {
+  background-color: #c6003d;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+}

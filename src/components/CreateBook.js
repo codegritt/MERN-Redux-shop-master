@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-
+import CreateBookmod from "./CreateBook.module.css";
+import CreateBookbut from "./CreateBook.module.css";
+import CreateBooksubmit from "./CreateBook.module.css";
 import { useNavigate } from "react-router-dom";
 
 const CreateBook = (props) => {
@@ -44,13 +46,13 @@ const CreateBook = (props) => {
   };
 
   return (
-    <div className="CreateBook">
+    <div className={CreateBookmod.createBookmod}>
       <div className="container">
         <div className="row">
           <div className="col-md-8 m-auto">
             <br />
-            <Link to="/home2" className="btn btn-outline-warning float-left">
-              Show BooK List
+            <Link to="/home2" className={CreateBookbut.createBookbut}>
+              Show Book List
             </Link>
           </div>
           <div className="col-md-8 m-auto">
@@ -123,11 +125,14 @@ const CreateBook = (props) => {
                   onChange={onChange}
                 />
               </div>
-
+              {/* 
               <input
                 type="submit"
-                className="btn btn-outline-warning btn-block mt-4"
-              />
+                className={CreateBooksubmit.createBooksubmit}
+              /> */}
+              <button className={CreateBooksubmit.createBooksubmit}>
+                Submit
+              </button>
             </form>
           </div>
         </div>

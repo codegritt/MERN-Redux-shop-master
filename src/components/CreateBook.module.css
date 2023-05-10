@@ -1,0 +1,19 @@
+.createBookmod {
+  background-color: whitesmoke;
+  color: gray;
+}
+
+.createBookbut {
+  background-color: #c6003d;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.createBooksubmit {
+  background-color: #c6003d;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+}

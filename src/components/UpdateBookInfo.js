@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../App.css";
+import UpdateBookInfomod from "./UpdateBookInfo.module.css";
+import UpdateBookInfobut from "./UpdateBookInfo.module.css";
+import UpdateBookInfosub from "./UpdateBookInfo.module.css";
 
 function UpdateBookInfo(props) {
   const [book, setBook] = useState({
@@ -61,13 +64,13 @@ function UpdateBookInfo(props) {
   };
 
   return (
-    <div className="UpdateBookInfo">
+    <div className={UpdateBookInfomod.updateBookInfomod}>
       <div className="container">
         <div className="row">
           <div className="col-md-8 m-auto">
             <br />
-            <Link to="/home2" className="btn btn-outline-warning float-left">
-              Show BooK List
+            <Link to="/home2" className={UpdateBookInfobut.updateBookInfobut}>
+              Show Book List
             </Link>
           </div>
           <div className="col-md-8 m-auto">
@@ -156,10 +159,8 @@ function UpdateBookInfo(props) {
             </div>
             <br />
 
-            <button
-              type="submit"
-              className="btn btn-outline-info btn-lg btn-block"
-            >
+            <button className={UpdateBookInfosub.updateBookInfosub}>
+              {" "}
               Update Book
             </button>
           </form>
