@@ -5,21 +5,28 @@ import Openpostmodal from "./PostStatus.module.css";
 import SnapModal from "./SnapModal";
 
 function PostStatus() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
+  const [modalOpen, setModalOpen] = useState(false);
+  const [status, setStatus] = useState("");
+  const sendStatus = () => {};
 
   return (
     <div className={Post_statusmain.post_statusmain}>
       <div className={Post_statusmod.post_statusmod}>
-        <button className={Openpostmodal.openpostmodal} onClick={showModal}>
+        <button
+          className={Openpostmodal.openpostmodal}
+          onClick={() => setModalOpen(true)}
+        >
           Start a Post
         </button>
       </div>
 
-      <SnapModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+      <SnapModal
+        status={status}
+        setStatus={setStatus}
+        modalOpen={modalOpen}
+        setModalOpen={setModalOpen}
+        sendStatus={sendStatus}
+      />
     </div>
   );
 }
