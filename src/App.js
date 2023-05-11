@@ -14,6 +14,7 @@ import ShowBookDetails from "./components/ShowBookDetails";
 import UpdateBookInfo from "./components/UpdateBookInfo";
 import CreateBook from "./components/CreateBook";
 import ShowBookList from "./components/ShowBookList";
+import SnapFeed from "./components/SnapFeed/SnapFeed";
 
 export const App = () => {
   return (
@@ -39,6 +40,7 @@ export const App = () => {
             <Route path="/create-book" element={<CreateBook />} />
             <Route path="/edit-book/:id" element={<UpdateBookInfo />} />
             <Route path="/show-book/:id" element={<ShowBookDetails />} />
+            <Route path="snapfeed" element={<SnapFeed />} />
           </Routes>
         </div>
       </BrowserRouter>
