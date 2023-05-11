@@ -3,11 +3,14 @@ import Post_statusmod from "./PostStatus.module.css";
 import Post_statusmain from "./PostStatus.module.css";
 import Openpostmodal from "./PostStatus.module.css";
 import SnapModal from "./SnapModal";
+import { postStatus } from "../../api/FirestoreAPI";
 
 function PostStatus() {
   const [modalOpen, setModalOpen] = useState(false);
   const [status, setStatus] = useState("");
-  const sendStatus = () => {};
+  const sendStatus = () => {
+    postStatus(status);
+  };
 
   return (
     <div className={Post_statusmain.post_statusmain}>
