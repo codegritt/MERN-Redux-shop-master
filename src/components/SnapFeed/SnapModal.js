@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Modal } from "antd";
+import Modalpos from "./SnapModal.module.css";
 
 const SnapModal = ({
   modalOpen,
@@ -11,6 +12,7 @@ const SnapModal = ({
   return (
     <>
       <Modal
+        className={Modalpos.modalpos}
         title="Create a post"
         open={modalOpen}
         onCancel={() => setModalOpen(false)}
