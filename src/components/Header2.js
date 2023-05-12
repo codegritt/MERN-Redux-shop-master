@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import headerSearch from "./Header2.module.css";
-import headerSearchInput from "./Header2.module.css";
 import header2Left from "./Header2.module.css";
 import headerSearchButton from "./Header2.module.css";
 import headerSearchButtonClass from "./Header2.module.css";

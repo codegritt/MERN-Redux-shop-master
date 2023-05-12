@@ -14,6 +14,7 @@ function PostStatus() {
 
   const sendStatus = async () => {
     let object = {
+      name: "Gokul",
       status: status,
       timeStamp: getCurrentTimeStamp("LLL"),
     };

@@ -49,3 +49,16 @@ export const postUserData = (object) => {
       console.log("We have found some error");
     });
 };
+
+export const getCurrentUserData = (object) => {
+  onSnapshot(dbRef, (response) => {
+    console.log(
+      response.docs.map((docs) => {
+        return {
+          ...docs.data(),
+          userID: docs.id,
+        };
+      })
+    );
+  });
+};

@@ -26,4 +26,15 @@
   color: rgba(0, 0, 0, 0.6);
   font-weight: 400;
   margin: 10px 0 0 10px;
+  position: relative;
+  bottom: 10px;
+}
+
+.namemain {
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  color: gray;
+  font-weight: 600;
+  margin: 10px 0 0 10px;
+  cursor: pointer;
 }
