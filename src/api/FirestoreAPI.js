@@ -15,7 +15,7 @@ import {
 import { toast } from "react-toastify";
 
 // let postsRef = collection(firestore, "posts");
-// let userRef = collection(firestore, "users");
+let userRef = collection(firestore, "users");
 // let likeRef = collection(firestore, "likes");
 // let commentsRef = collection(firestore, "comments");
 // let connectionRef = collection(firestore, "connections");
@@ -40,4 +40,12 @@ export const getStatus = (setAllStatus) => {
       })
     );
   });
+};
+
+export const postUserData = (object) => {
+  addDoc(userRef, object)
+    .then(() => {})
+    .catch((err) => {
+      console.log("We have found some error");
+    });
 };

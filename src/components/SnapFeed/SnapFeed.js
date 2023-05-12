@@ -12,7 +12,9 @@ function SnapFeed() {
   return (
     <div>
       <Sidebar />
+
       <PostStatus />
+
       <div className={Footer__body.footer__body}>
         <FooterImage />
         <Footer1 />

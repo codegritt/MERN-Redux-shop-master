@@ -10,9 +10,13 @@ import LoginModal from "./LoginModal";
 import CartModal from "./CartModal";
 import header2imga from "./Header2.module.css";
 import header2__rightbuttons from "./Header2.module.css";
+import Snapfeedtext from "./Header2.module.css";
+import Snapfeedicon from "./Header2.module.css";
 import { Link } from "react-router-dom";
 import Autocomplete from "./AutoComplete";
 import { autoCompleteData } from "./data";
+import { faInbox } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Header2() {
   return (
@@ -50,6 +54,13 @@ function Header2() {
         </div>
 
         <div className={header2__rightbuttons.header2__rightbuttons}>
+          <Link className={Snapfeedtext.snapfeedtext} to="/snapfeed">
+            <span>Feed</span>
+            <FontAwesomeIcon
+              className={Snapfeedicon.snapfeedicon}
+              icon={faInbox}
+            />
+          </Link>
           <LoginModal />
 
           <CartModal />

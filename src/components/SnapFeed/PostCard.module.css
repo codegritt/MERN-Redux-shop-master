@@ -7,7 +7,8 @@
   border-radius: 7px;
   display: flex;
   flex-direction: column;
-  box-shadow: 10px 10px 10px gray;
+  padding-bottom: 20px;
+  box-shadow: 10px 5px 25px gray;
 }
 
 .statusmain {

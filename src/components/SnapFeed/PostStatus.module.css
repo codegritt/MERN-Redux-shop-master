@@ -2,11 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 45%;
   position: relative;
-  left: 250px;
-  bottom: 1140px;
+  left: 310px;
+  bottom: 1115px;
   flex-direction: column;
+  border-radius: 7px;
+  background-color: whitesmoke;
+  margin: 10px 10px 30px 10px;
+  padding-bottom: 40px;
+  box-shadow: 10px 5px 25px gray;
 }
 
 .post_statusmod {
