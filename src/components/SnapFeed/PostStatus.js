@@ -8,8 +8,19 @@ import PostCard from "./PostCard";
 import { getCurrentTimeStamp } from "../../Helpers/useMoment";
 import { updatePost } from "../../api/FirestoreAPI";
 import { uploadPostImage } from "../../api/ImageUpload";
+import SnapLogo from "../../assets/logos-110.webp";
+import SnapLogomod from "./PostStatus.module.css";
+import { Link } from "react-router-dom";
+import { faCameraRetro } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faVideo } from "@fortawesome/free-solid-svg-icons";
+import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
+import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
+import PostcreateOptions from "./PostStatus.module.css";
+import PostcreateOptionsp from "./PostStatus.module.css";
+import Photoicon from "./PostStatus.module.css";
 
-function PostStatus() {
+function PostStatus(posts) {
   const [modalOpen, setModalOpen] = useState(false);
   const [status, setStatus] = useState("");
   const [allStatuses, setAllStatus] = useState([]);
@@ -17,26 +28,22 @@ function PostStatus() {
   const [isEdit, setIsEdit] = useState(false);
   const [postImage, setPostImage] = useState("");
 
-  const updateStatus = () => {
-    updatePost(currentPost.id, status, postImage);
-    setModalOpen(false);
-  };
-
   const sendStatus = async () => {
     let object = {
       name: "Gokul",
+      userEmail: "gokul@gmail.com",
+      userName: "gokul",
+      userID: "123456",
       status: status,
       timeStamp: getCurrentTimeStamp("LLL"),
+      postImage: postImage,
     };
 
     await postStatus(object);
     await setModalOpen(false);
+    setIsEdit(false);
     await setStatus("");
   };
-
-  useMemo(() => {
-    getStatus(setAllStatus);
-  }, []);
 
   const getEditData = (posts) => {
     setModalOpen(true);
@@ -45,15 +52,60 @@ function PostStatus() {
     setIsEdit(true);
   };
 
+  const updateStatus = () => {
+    updatePost(currentPost.id, status, postImage);
+    setModalOpen(false);
+  };
+
+  useMemo(() => {
+    getStatus(setAllStatus);
+  }, []);
+
   return (
     <div className={Post_statusmain.post_statusmain}>
       <div className={Post_statusmod.post_statusmod}>
+        <Link to="/">
+          <img
+            className={SnapLogomod.snapLogomod}
+            src={SnapLogo}
+            alt="SnapLogo"
+          />
+        </Link>
+
         <button
           className={Openpostmodal.openpostmodal}
           onClick={() => setModalOpen(true)}
         >
           Start a Post
         </button>
+
+        <div className={PostcreateOptions.postcreateOptions}>
+          <div className={PostcreateOptionsp.postcreateOptionsp}>
+            <FontAwesomeIcon
+              className={Photoicon.photoicon}
+              icon={faCameraRetro}
+            />
+            <p>Photo</p>
+          </div>
+          <div className={PostcreateOptionsp.postcreateOptionsp}>
+            <FontAwesomeIcon className={Photoicon.photoicon} icon={faVideo} />
+            <p>Video</p>
+          </div>
+          <div className={PostcreateOptionsp.postcreateOptionsp}>
+            <FontAwesomeIcon
+              className={Photoicon.photoicon}
+              icon={faCalendarDays}
+            />
+            <p>Event</p>
+          </div>
+          <div className={PostcreateOptionsp.postcreateOptionsp}>
+            <FontAwesomeIcon
+              className={Photoicon.photoicon}
+              icon={faNewspaper}
+            />
+            <p>Article</p>
+          </div>
+        </div>
       </div>
 
       <SnapModal

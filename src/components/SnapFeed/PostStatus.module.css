@@ -16,12 +16,12 @@
 
 .post_statusmod {
   width: 600px;
-  height: 120px;
+  height: 150px;
   background-color: whitesmoke;
   margin-top: 30px;
   border: 1px solid #b7b7b7;
   border-radius: 7px;
-  display: flex;
+
   justify-content: space-around;
   align-items: center;
   box-shadow: 10px 10px 10px gray;
@@ -36,7 +36,8 @@
   outline: none;
   border: 1px solid #b7b7b7;
   border-radius: 30px;
-  margin-left: -30px;
+  margin-left: 0px;
+  margin-top: 30px;
   cursor: pointer;
   padding: 15px;
   font-weight: 600;
@@ -47,4 +48,36 @@
 
 .openpostmodal:hover {
   background-color: #dcdbdb;
+}
+
+.snapLogomod {
+  width: 55px;
+}
+
+.postcreateOptions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.postcreateOptionsp {
+  display: flex;
+  margin-top: 25px;
+  font-size: 15px;
+  color: gray;
+}
+
+.postcreateOptionsp:hover {
+  background-color: #c6003d;
+  color: whitesmoke;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 11.5%;
+}
+
+.photoicon {
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
 }
