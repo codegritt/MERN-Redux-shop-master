@@ -6,11 +6,21 @@ import SnapModal from "./SnapModal";
 import { postStatus, getStatus } from "../../api/FirestoreAPI";
 import PostCard from "./PostCard";
 import { getCurrentTimeStamp } from "../../Helpers/useMoment";
+import { updatePost } from "../../api/FirestoreAPI";
+import { uploadPostImage } from "../../api/ImageUpload";
 
 function PostStatus() {
   const [modalOpen, setModalOpen] = useState(false);
   const [status, setStatus] = useState("");
   const [allStatuses, setAllStatus] = useState([]);
+  const [currentPost, setCurrentPost] = useState({});
+  const [isEdit, setIsEdit] = useState(false);
+  const [postImage, setPostImage] = useState("");
+
+  const updateStatus = () => {
+    updatePost(currentPost.id, status, postImage);
+    setModalOpen(false);
+  };
 
   const sendStatus = async () => {
     let object = {
@@ -27,6 +37,13 @@ function PostStatus() {
   useMemo(() => {
     getStatus(setAllStatus);
   }, []);
+
+  const getEditData = (posts) => {
+    setModalOpen(true);
+    setStatus(posts?.status);
+    setCurrentPost(posts);
+    setIsEdit(true);
+  };
 
   return (
     <div className={Post_statusmain.post_statusmain}>
@@ -45,13 +62,20 @@ function PostStatus() {
         modalOpen={modalOpen}
         setModalOpen={setModalOpen}
         sendStatus={sendStatus}
+        isEdit={isEdit}
+        updateStatus={updateStatus}
+        uploadPostImage={uploadPostImage}
+        postImage={postImage}
+        setPostImage={setPostImage}
+        setCurrentPost={setCurrentPost}
+        currentPost={currentPost}
       />
 
       <div>
         {allStatuses.map((posts) => {
           return (
             <>
-              <PostCard posts={posts} />
+              <PostCard posts={posts} getEditData={getEditData} />
             </>
           );
         })}

@@ -38,3 +38,20 @@
   margin: 10px 0 0 10px;
   cursor: pointer;
 }
+
+.editicon {
+  color: gray;
+  position: relative;
+  bottom: 60px;
+
+  float: right;
+  padding: 5px;
+}
+
+.trashicon {
+  color: gray;
+  position: relative;
+  bottom: 60px;
+  float: right;
+  padding: 5px;
+}
