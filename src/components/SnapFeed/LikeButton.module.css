@@ -1,6 +1,8 @@
 .likecontainer {
   display: flex;
+  justify-content: center;
 
+  flex-direction: column;
   align-items: start;
 
   gap: 5px;
@@ -9,10 +11,9 @@
 }
 
 .likecontainerp {
-  font-weight: 400;
+  margin-left: 10px;
+  font-size: 12px;
   color: gray;
-  font-size: 14px;
-  margin-left: 5px;
 }
 
 .likecontainericon {
@@ -20,4 +21,106 @@
   color: gray;
   position: relative;
   top: 3px;
+}
+
+.hr_line {
+  margin-top: -17px;
+}
+
+.hr {
+  border-top: 1px solid rgb(181, 181, 181);
+}
+
+.likecomment {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 5px;
+}
+
+.likescommentinner {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.blue {
+  color: #0a66c2;
+}
+
+.black {
+  color: rgba(58, 58, 58, 0.835);
+}
+
+.likescommentinner.p {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  color: rgba(58, 58, 58, 0.835);
+  font-size: 16px;
+}
+
+.commentinput {
+  height: 40px;
+  background-color: whitesmoke;
+  padding-left: 10px;
+  border-radius: 30px;
+  border: 1px solid #737373;
+  font-family: system-ui;
+  color: #4b4b4b;
+  font-size: 16px;
+}
+
+.commentinput:focus {
+  outline: 1px solid #4b4b4b;
+  color: #4b4b4b;
+}
+
+.addcommentbtn {
+  width: 110px;
+  font-size: 12px;
+  height: 35px;
+  background-color: #c6003d;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.allcomments {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(227, 227, 227);
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+}
+
+.allcommentsname {
+  color: #212121;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.allcommentscomment {
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+.allcommentstimestamp {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.cardcomment {
+  color: gray;
+  font-size: 14px;
+  position: relative;
+  bottom: 12px;
+  margin-left: 5px;
 }
