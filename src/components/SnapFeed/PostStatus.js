@@ -19,6 +19,10 @@ import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import PostcreateOptions from "./PostStatus.module.css";
 import PostcreateOptionsp from "./PostStatus.module.css";
 import Photoicon from "./PostStatus.module.css";
+import PhotoModal from "./PhotoModal";
+import VideoModal from "./VideoModal";
+import EventModal from "./EventModal";
+import ArticleModal from "./ArticleModal";
 
 function PostStatus(posts) {
   const [modalOpen, setModalOpen] = useState(false);
@@ -27,6 +31,10 @@ function PostStatus(posts) {
   const [currentPost, setCurrentPost] = useState({});
   const [isEdit, setIsEdit] = useState(false);
   const [postImage, setPostImage] = useState("");
+  const [photomodalOpen, setphotoModalOpen] = useState(false);
+  const [videomodalOpen, setvideoModalOpen] = useState(false);
+  const [eventmodalOpen, seteventModalOpen] = useState(false);
+  const [articlemodalOpen, setarticleModalOpen] = useState(false);
 
   const sendStatus = async () => {
     let object = {
@@ -81,29 +89,76 @@ function PostStatus(posts) {
 
         <div className={PostcreateOptions.postcreateOptions}>
           <div className={PostcreateOptionsp.postcreateOptionsp}>
-            <FontAwesomeIcon
-              className={Photoicon.photoicon}
-              icon={faCameraRetro}
+            <Link
+              className={PostcreateOptionsp.postcreateOptionsp}
+              onClick={() => setphotoModalOpen(true)}
+            >
+              <FontAwesomeIcon
+                style={{ color: "gray" }}
+                className={Photoicon.photoicon}
+                icon={faCameraRetro}
+              />
+              <p style={{ color: "gray" }}>Photo</p>
+            </Link>
+
+            <PhotoModal
+              photomodalOpen={photomodalOpen}
+              setphotoModalOpen={setphotoModalOpen}
             />
-            <p>Photo</p>
           </div>
           <div className={PostcreateOptionsp.postcreateOptionsp}>
-            <FontAwesomeIcon className={Photoicon.photoicon} icon={faVideo} />
-            <p>Video</p>
+            <Link
+              className={PostcreateOptionsp.postcreateOptionsp}
+              onClick={() => setvideoModalOpen(true)}
+            >
+              <FontAwesomeIcon
+                style={{ color: "gray" }}
+                className={Photoicon.photoicon}
+                icon={faVideo}
+              />
+              <p style={{ color: "gray" }}>Video</p>
+            </Link>
+
+            <VideoModal
+              videomodalOpen={videomodalOpen}
+              setvideoModalOpen={setvideoModalOpen}
+            />
           </div>
           <div className={PostcreateOptionsp.postcreateOptionsp}>
-            <FontAwesomeIcon
-              className={Photoicon.photoicon}
-              icon={faCalendarDays}
+            <Link
+              className={PostcreateOptionsp.postcreateOptionsp}
+              onClick={() => seteventModalOpen(true)}
+            >
+              <FontAwesomeIcon
+                style={{ color: "gray" }}
+                className={Photoicon.photoicon}
+                icon={faCalendarDays}
+              />
+              <p style={{ color: "gray" }}>Event</p>
+            </Link>
+
+            <EventModal
+              eventmodalOpen={eventmodalOpen}
+              seteventModalOpen={seteventModalOpen}
             />
-            <p>Event</p>
           </div>
           <div className={PostcreateOptionsp.postcreateOptionsp}>
-            <FontAwesomeIcon
-              className={Photoicon.photoicon}
-              icon={faNewspaper}
+            <Link
+              className={PostcreateOptionsp.postcreateOptionsp}
+              onClick={() => setarticleModalOpen(true)}
+            >
+              <FontAwesomeIcon
+                style={{ color: "gray" }}
+                className={Photoicon.photoicon}
+                icon={faNewspaper}
+              />
+              <p style={{ color: "gray" }}>Article</p>
+            </Link>
+
+            <ArticleModal
+              articlemodalOpen={articlemodalOpen}
+              setarticleModalOpen={setarticleModalOpen}
             />
-            <p>Article</p>
           </div>
         </div>
       </div>

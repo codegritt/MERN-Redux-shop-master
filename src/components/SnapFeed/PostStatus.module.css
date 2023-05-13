@@ -61,19 +61,14 @@
 
 .postcreateOptionsp {
   display: flex;
-  margin-top: 25px;
+  margin-top: 15px;
   font-size: 15px;
   color: gray;
 }
 
 .postcreateOptionsp:hover {
-  background-color: #c6003d;
-  color: whitesmoke;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  height: 30px;
-  width: 11.5%;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
 }
 
 .photoicon {
