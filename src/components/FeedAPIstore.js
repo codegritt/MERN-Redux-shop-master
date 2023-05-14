@@ -45,12 +45,17 @@ const FeedAPIstore = () => {
             </div>
 
             <div className={Products__cardesc.products__cardesc}>
-              <h6>{product.title}</h6>
-
-              <span className={Products__price.products__price}>
-                {`Price: ${product.price}`}
-              </span>
+              <h6 style={{ fontSize: "13px", fontWeight: "bold" }}>
+                {product.title}
+              </h6>
             </div>
+
+            <span
+              style={{ fontSize: "12px", fontWeight: "bold", color: "gray" }}
+              className={Products__price.products__price}
+            >
+              {`Price: ${product.price}`}
+            </span>
           </div>
         ))}
       </div>

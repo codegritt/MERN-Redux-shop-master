@@ -166,7 +166,7 @@ const Login = () => {
                 position: "relative",
                 bottom: "20px",
                 height: "30px",
-                fontSize: "14px",
+                fontSize: "12px",
               }}
               value={username}
               onChange={(e) => usernameupdate(e.target.value)}
@@ -180,7 +180,7 @@ const Login = () => {
                 position: "relative",
                 bottom: "20px",
                 height: "30px",
-                fontSize: "14px",
+                fontSize: "12px",
               }}
               type="password"
               value={password}

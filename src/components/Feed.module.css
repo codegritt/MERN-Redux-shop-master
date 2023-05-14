@@ -4,11 +4,11 @@
   flex: 0.1;
   text-align: center;
   height: fit-content;
-  width: 800px;
-  height: 350px;
+  width: 850px;
+  height: 345px;
   margin-top: 20px;
-  left: 115px;
-  box-shadow: 10px 10px 10px gray;
+  left: 90px;
+  box-shadow: 10px 10px 20px 5px gray;
 }
 
 .feedImage {

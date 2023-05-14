@@ -30,18 +30,38 @@ export default function LikeButton({ userId, postId, currentUser }) {
   const handleLike = () => {
     likePost(userId, postId, liked);
   };
-  const getComment = (event) => {
-    setComment(event.target.value);
-  };
+  // const getComment = (event) => {
+  //   setComment(event.target.value);
+  // };
 
-  const addComment = () => {
-    postComment(comment, getCurrentTimeStamp("LLL"), currentUser?.name);
-    setComment("");
+  // const addComment = () => {
+  //   postComment(comment, getCurrentTimeStamp("LLL"), currentUser?.name);
+  //   setComment("");
+  // };
+  // useMemo(() => {
+  //   getLikesByUser(userId, postId, setLiked, setLikesCount);
+  //   getComments(postId, setComments);
+  // }, [userId, postId]);
+
+  const onClickHandler = async () => {
+    setComments((comments) => [...comments, comment]);
+
+    let object1 = {
+      name: "Gokul",
+      userEmail: "gokul@gmail.com",
+      userName: "gokul",
+      userID: "123456",
+      comment: comment,
+      timeStamp: getCurrentTimeStamp("LLL"),
+    };
+
+    await postComment(object1);
+
+    await setComment("");
   };
-  useMemo(() => {
-    getLikesByUser(userId, postId, setLiked, setLikesCount);
-    getComments(postId, setComments);
-  }, [userId, postId]);
+  const onChangeHandler = (e) => {
+    setComment(e.target.value);
+  };
 
   const [like, setLike] = useState(0),
     [isLike, setIsLike] = useState(false),
@@ -98,6 +118,88 @@ export default function LikeButton({ userId, postId, currentUser }) {
       </div>
       {showCommentBox ? (
         <>
+          <div className="main-container">
+            {comments.map((text) => (
+              <div
+                style={{ backgroundColor: "gray", margin: "10px" }}
+                className="comment-container"
+              >
+                {text}
+                <div>
+                  <button
+                    style={{
+                      fontSize: "11px",
+                      width: "60px",
+                      height: "25px",
+                      backgroundColor: "#C6003d",
+                      color: "whitesmoke",
+                      borderRadius: "3px",
+                      outline: "none",
+                      border: "none",
+                      cursor: "pointer",
+                      marginLeft: "10px",
+                    }}
+                    className={"like-button " + (isLike ? "liked" : "")}
+                    onClick={onLikeButtonClick}
+                  >
+                    {"Likes"} | {like}
+                  </button>
+                </div>
+
+                <div className={Likecomment.likecomment}>
+                  <div
+                    className={Likescommentinner.likescommentinner}
+                    onClick={handleLike}
+                  ></div>
+                </div>
+              </div>
+            ))}
+            <div className="comment-flexbox">
+              <input
+                style={{
+                  height: "30px",
+                  backgroundColor: "whitesmoke",
+                  paddingLeft: "10px",
+                  borderRadius: "3px",
+                  border: "1px solid #737373",
+                  color: "#4b4b4b",
+                  fontSize: "12px",
+                  fontWeight: "bold",
+                  width: "97%",
+                  position: "relative",
+                  top: "10px",
+                  borderColor: "transparent",
+                  textDecoration: "none",
+                }}
+                onChange={onChangeHandler}
+                placeholder="Add a Comment"
+                className="form-control"
+                name="comment"
+                value={comment}
+              />
+
+              <button
+                className={Addcommentbtn.addcommentbtn}
+                onClick={onClickHandler}
+              >
+                Add Comment
+              </button>
+            </div>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+      {/* <div className="main-container">
+        {comments.map((text) => (
+          <div className="comment-container">{text}</div>
+        ))}
+        <div className="comment-flexbox">
+          <textarea
+            value={comment}
+            onChange={onChangeHandler}
+            className="input-box"
+          />
           <input
             style={{
               height: "30px",
@@ -114,44 +216,17 @@ export default function LikeButton({ userId, postId, currentUser }) {
               borderColor: "transparent",
               textDecoration: "none",
             }}
-            onChange={getComment}
+            onChange={onChangeHandler}
             placeholder="Add a Comment"
-            // className={Commentinput.commentinput}
             className="form-control"
             name="comment"
             value={comment}
           />
-          <button className={Addcommentbtn.addcommentbtn} onClick={addComment}>
-            Add Comment
+          <button onClick={onClickHandler} className="comment-button">
+            Submit
           </button>
-
-          {comments.length > 0 ? (
-            comments.map((comment) => {
-              return (
-                <div className={Allcomments.allcomments}>
-                  <p className={Allcommentsname.allcommentsname}>
-                    {comment.name}
-                  </p>
-                  <p className={Allcommentscomment.allcommentscomment}>
-                    {comment.comment}
-                  </p>
-
-                  <p className={Allcommentstimestamp.allcommentstimestamp}>
-                    {comment.timeStamp}
-                  </p>
-                  {/* 
-                  <p>•</p>
-                   */}
-                </div>
-              );
-            })
-          ) : (
-            <></>
-          )}
-        </>
-      ) : (
-        <></>
-      )}
+        </div>
+      </div> */}
     </div>
   );
 }

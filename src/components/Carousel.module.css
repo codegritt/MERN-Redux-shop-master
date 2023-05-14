@@ -1,15 +1,19 @@
 .sliderbanner {
-  width: 800px;
-  height: 329px;
+  width: 715px;
+  height: 320px;
   margin: 20px auto;
   overflow: hidden;
   position: relative;
+  right: 30px;
   bottom: 20px;
 }
 
 .item1image {
-  width: 140%;
-  height: 70%;
+  width: 120%;
+  height: 60%;
+  position: relative;
+  top: 10px;
+  left: 80px;
 }
 
 .item2image {

@@ -8,6 +8,7 @@ import Reduxhome_image from "./ReduxHome.module.css";
 import Reduxhome_title from "./ReduxHome.module.css";
 import Redux_plusicon from "./ReduxHome.module.css";
 import Redux_button from "./ReduxHome.module.css";
+import Cardcontent from "./ReduxHome.module.css";
 import { Link } from "react-router-dom";
 
 class ReduxHome extends Component {
@@ -41,7 +42,7 @@ class ReduxHome extends Component {
             </span>
           </div>
 
-          <div className="card-content">
+          <div className={Cardcontent.cardcontent}>
             <p>{item.desc}</p>
             <p>
               <b>Price: {item.price}$</b>

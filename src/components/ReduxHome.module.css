@@ -9,11 +9,11 @@
   position: relative;
   bottom: 700px;
   left: 100px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .reduxhome_card {
-  width: 280px;
+  width: 250px;
   position: relative;
   bottom: 700px;
   left: 95px;
@@ -30,16 +30,17 @@
 .reduxhome_image {
   color: black;
   font-weight: 400;
-  width: 250px;
+  width: 230px;
 }
 
 .reduxhome_title {
-  color: black;
-  font-weight: 400;
+  color: gray;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .redux_plusicon {
-  font-size: 1.1em;
+  font-size: 1em;
   background-color: #d1203c;
   color: white;
   cursor: pointer;
@@ -50,5 +51,11 @@
 
 .redux_button {
   position: relative;
-  left: 120px;
+  left: 100px;
+}
+
+.cardcontent {
+  color: gray;
+  font-size: 13px;
+  font-weight: 400;
 }

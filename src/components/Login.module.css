@@ -35,7 +35,7 @@
 }
 
 .Mleft__img1 {
-  width: 50px;
+  width: 40px;
   position: relative;
   bottom: 10px;
   right: 10px;
@@ -45,7 +45,7 @@
   position: relative;
   left: 7%;
   bottom: 50px;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: bold;
 }
 
@@ -67,15 +67,15 @@
 }
 
 .Mlogin__title {
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 10px 0;
   color: #414141;
   position: relative;
-  bottom: 15px;
+  bottom: 10px;
 }
 
 .MLogin_des {
-  font-size: 0.75em;
+  font-size: 0.7em;
   color: gray;
   position: relative;
   bottom: 25px;
@@ -96,8 +96,8 @@
   outline: none;
   color: white;
   background-color: #d1203c;
-  font-size: 15px;
-  height: 40px;
+  font-size: 13px;
+  height: 30px;
   cursor: pointer;
   border-radius: 5px;
   position: relative;

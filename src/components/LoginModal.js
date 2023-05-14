@@ -40,6 +40,7 @@ class LoginModal extends Component {
       <>
         <div>
           <span
+            style={{ left: "320px" }}
             className={AccountUserName.accountUserName}
             onClick={this.onClickButton}
           >

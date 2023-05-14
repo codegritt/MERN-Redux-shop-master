@@ -14,6 +14,7 @@ import Snapfeedicon from "./Header2.module.css";
 import { Link } from "react-router-dom";
 import Autocomplete from "./AutoComplete";
 import { autoCompleteData } from "./data";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faInbox } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -46,8 +47,12 @@ function Header2() {
         </div>
 
         <div className={headerSearchButtonClass.header__searchbuttonClass}>
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
           <button className={headerSearchButton.header__searchbutton}>
-            {/* <SearchIcon /> */}
+            <FontAwesomeIcon
+              style={{ marginRight: "5px" }}
+              icon={faMagnifyingGlass}
+            />
             Search
           </button>
         </div>
@@ -60,6 +65,7 @@ function Header2() {
               icon={faInbox}
             />
           </Link>
+
           <LoginModal />
 
           <CartModal />

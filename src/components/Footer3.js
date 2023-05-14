@@ -4,7 +4,8 @@ import Footer3__text2 from "./Footer3.module.css";
 import Footer3__text3 from "./Footer3.module.css";
 import Footer3__text3flex from "./Footer3.module.css";
 import Footer3__text3Bharat from "./Footer3.module.css";
-import Footer3__text3BharatImg from "./Footer3.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 function Footer3() {
   return (
@@ -80,10 +81,9 @@ function Footer3() {
           </p>
           <p className={Footer3__text3Bharat.footer3__text3Bharat}>
             Made for Bharat
-            <img
-              className={Footer3__text3BharatImg.footer3__text3BharatImg}
-              src="https://lh3.googleusercontent.com/4mVKX0wRcVrgjauU3fcmIiUK7WhxgzNlNNMhlnVieJzfsIaQ6YxvDTr75Z-TsxxMd0E85GNlEUZs9SYx3Js8xQCcxC9YShEEFepbjScl6Q"
-              alt=""
+            <FontAwesomeIcon
+              style={{ marginLeft: "5px", color: "#C6003d" }}
+              icon={faHeart}
             />
           </p>
         </div>
