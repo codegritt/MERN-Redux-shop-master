@@ -1,10 +1,5 @@
 import React, { useMemo, useState } from "react";
-import {
-  likePost,
-  getLikesByUser,
-  postComment,
-  getComments,
-} from "../../api/FirestoreAPI.js";
+import { likePost, postComment } from "../../api/FirestoreAPI.js";
 import { getCurrentTimeStamp } from "../../Helpers/useMoment.js";
 
 import { AiOutlineComment } from "react-icons/ai";
@@ -14,16 +9,11 @@ import Hr from "./LikeButton.module.css";
 import Likecomment from "./LikeButton.module.css";
 import Likescommentinner from "./LikeButton.module.css";
 import Addcommentbtn from "./LikeButton.module.css";
-import Allcomments from "./LikeButton.module.css";
-import Allcommentsname from "./LikeButton.module.css";
-import Allcommentscomment from "./LikeButton.module.css";
-import Allcommentstimestamp from "./LikeButton.module.css";
 import Likecontainerp from "./LikeButton.module.css";
 import Cardcomment from "./LikeButton.module.css";
 import Commentcontainer from "./LikeButton.module.css";
 
 export default function LikeButton({ userId, postId, currentUser }) {
-  const [likesCount, setLikesCount] = useState(0);
   const [showCommentBox, setShowCommentBox] = useState(false);
   const [liked, setLiked] = useState(false);
   const [comment, setComment] = useState("");
@@ -69,6 +59,13 @@ export default function LikeButton({ userId, postId, currentUser }) {
     onLikeButtonClick = () => {
       setLike(like + (isLike ? +1 : +1));
       setIsLike(!isLike);
+    };
+
+  const [replylike, setreplyLike] = useState(0),
+    [isreplyLike, setIsreplyLike] = useState(false),
+    onLikereplyButtonClick = () => {
+      setreplyLike(replylike + (isreplyLike ? +1 : +1));
+      setIsreplyLike(!isreplyLike);
     };
 
   return (
@@ -148,10 +145,10 @@ export default function LikeButton({ userId, postId, currentUser }) {
                     cursor: "pointer",
                     marginLeft: "5px",
                   }}
-                  className={"like-button " + (isLike ? "liked" : "")}
-                  onClick={onLikeButtonClick}
+                  className={"like-button " + (isreplyLike ? "liked" : "")}
+                  onClick={onLikereplyButtonClick}
                 >
-                  {"Likes"} | {like}
+                  {"Likes"} | {replylike}
                 </button>
               </>
             ))}

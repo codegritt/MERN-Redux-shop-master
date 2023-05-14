@@ -16,11 +16,11 @@ function FooterImage() {
   return (
     <>
       <div className={Homepagesection.homePageSection}>
-        <img
+        {/* <img
           src="https://i2.sdlcdn.com/img/leaves2x.png"
           alt=""
           className={DownloadBackImage.downloadBackImage}
-        />
+        /> */}
         <div
           className={DownloadAppLeftImgContainer.downloadAppLeftImgContainer}
         >

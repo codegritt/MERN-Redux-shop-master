@@ -7,6 +7,7 @@
   height: 140px;
   position: relative;
   bottom: 700px;
+  right: 10px;
   margin-top: 40px;
   padding-left: 30px;
   border-left: 1px solid #e2e2e2;
@@ -25,12 +26,6 @@
   margin-right: 20px;
   color: gray;
   cursor: pointer;
-  /* border-left: 1px solid #e2e2e2;
-  border-right: 1px solid #e2e2e2;
-  padding: 26px 25px;
-  height: 200px;
-  box-sizing: border-box;
-  text-align: center; */
 }
 
 .footer1Option__title {

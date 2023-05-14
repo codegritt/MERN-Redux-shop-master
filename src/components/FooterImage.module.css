@@ -25,7 +25,7 @@
   height: 462px;
   display: inline-block;
   position: relative;
-  bottom: 275px;
+  top: 25px;
   left: 130px;
 }
 
@@ -36,7 +36,7 @@
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  bottom: 275px;
+  top: 25px;
   left: 130px;
 }
 .downloadAppHeading {

@@ -25,7 +25,7 @@ function Home() {
         <Feed />
         <ToggleCard />
         <BooksContext.Provider value={true}>
-          <div>
+          <div style={{ position: "relative", right: "100px", top: "350px" }}>
             <UseContextHook />
           </div>
         </BooksContext.Provider>

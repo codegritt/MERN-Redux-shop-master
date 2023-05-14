@@ -3,7 +3,7 @@ import ContextPost from "../ContextPost";
 
 const UseContextHook = () => {
   return (
-    <div>
+    <div style={{ position: "relative", right: "100px", top: "350px" }}>
       <ContextPost />
     </div>
   );
