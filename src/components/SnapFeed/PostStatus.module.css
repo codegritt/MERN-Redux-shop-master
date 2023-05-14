@@ -2,16 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: 46%;
   position: relative;
-  left: 310px;
+  left: 290px;
   bottom: 1115px;
   flex-direction: column;
   border-radius: 7px;
-  background-color: whitesmoke;
-  margin: 10px 10px 30px 10px;
+  /* background-color: whitesmoke;
+  margin: 10px 10px 30px 10px; */
   padding-bottom: 40px;
-  box-shadow: 10px 5px 25px gray;
+  /* box-shadow: 10px 5px 25px gray; */
 }
 
 .post_statusmod {
@@ -21,7 +21,8 @@
   margin-top: 30px;
   border: 1px solid #b7b7b7;
   border-radius: 7px;
-
+  position: relative;
+  bottom: 30px;
   justify-content: space-around;
   align-items: center;
   box-shadow: 10px 10px 10px gray;

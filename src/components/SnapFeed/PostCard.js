@@ -11,26 +11,29 @@ import Trashicon from "./PostCard.module.css";
 
 function PostCard({ posts, getEditData }) {
   return (
-    <div className={Postcardmain.postcardmain}>
-      <p className={Namemain.namemain}>{posts.name}</p>
-      <p className={Timestampmain.timestampmain}>{posts.email}</p>
-      <p className={Timestampmain.timestampmain}>{posts.timeStamp}</p>
+    <>
+      <hr></hr>
+      <div className={Postcardmain.postcardmain}>
+        <p className={Namemain.namemain}>{posts.name}</p>
+        <p className={Timestampmain.timestampmain}>{posts.email}</p>
+        <p className={Timestampmain.timestampmain}>{posts.timeStamp}</p>
 
-      <div className="action-container">
-        <BsTrash
-          size={30}
-          className={Trashicon.trashicon}
-          onClick={() => deletePost(posts.id)}
-        />
-        <BsPencil
-          size={30}
-          className={Editicon.editicon}
-          onClick={() => getEditData(posts)}
-        />
+        <div className="action-container">
+          <BsTrash
+            size={30}
+            className={Trashicon.trashicon}
+            onClick={() => deletePost(posts.id)}
+          />
+          <BsPencil
+            size={30}
+            className={Editicon.editicon}
+            onClick={() => getEditData(posts)}
+          />
+        </div>
+        <p className={Statusmain.statusmain}>{posts.status}</p>
+        <LikeButton />
       </div>
-      <p className={Statusmain.statusmain}>{posts.status}</p>
-      <LikeButton />
-    </div>
+    </>
   );
 }
 

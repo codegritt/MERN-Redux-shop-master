@@ -124,3 +124,10 @@
   bottom: 12px;
   margin-left: 5px;
 }
+
+.commentcontainer {
+  margin: 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 5px;
+}

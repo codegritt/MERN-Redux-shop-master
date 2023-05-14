@@ -94,7 +94,7 @@ function PostStatus(posts) {
               onClick={() => setphotoModalOpen(true)}
             >
               <FontAwesomeIcon
-                style={{ color: "gray" }}
+                style={{ color: "#378fe9" }}
                 className={Photoicon.photoicon}
                 icon={faCameraRetro}
               />
@@ -112,7 +112,7 @@ function PostStatus(posts) {
               onClick={() => setvideoModalOpen(true)}
             >
               <FontAwesomeIcon
-                style={{ color: "gray" }}
+                style={{ color: "#5f9b41" }}
                 className={Photoicon.photoicon}
                 icon={faVideo}
               />
@@ -130,7 +130,7 @@ function PostStatus(posts) {
               onClick={() => seteventModalOpen(true)}
             >
               <FontAwesomeIcon
-                style={{ color: "gray" }}
+                style={{ color: "#c37d16" }}
                 className={Photoicon.photoicon}
                 icon={faCalendarDays}
               />
@@ -148,7 +148,7 @@ function PostStatus(posts) {
               onClick={() => setarticleModalOpen(true)}
             >
               <FontAwesomeIcon
-                style={{ color: "gray" }}
+                style={{ color: "#e16745" }}
                 className={Photoicon.photoicon}
                 icon={faNewspaper}
               />

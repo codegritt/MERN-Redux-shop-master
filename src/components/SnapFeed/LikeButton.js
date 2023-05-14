@@ -20,6 +20,7 @@ import Allcommentscomment from "./LikeButton.module.css";
 import Allcommentstimestamp from "./LikeButton.module.css";
 import Likecontainerp from "./LikeButton.module.css";
 import Cardcomment from "./LikeButton.module.css";
+import Commentcontainer from "./LikeButton.module.css";
 
 export default function LikeButton({ userId, postId, currentUser }) {
   const [likesCount, setLikesCount] = useState(0);
@@ -120,40 +121,41 @@ export default function LikeButton({ userId, postId, currentUser }) {
         <>
           <div className="main-container">
             {comments.map((text) => (
-              <div
-                style={{ backgroundColor: "gray", margin: "10px" }}
-                className="comment-container"
-              >
-                {text}
-                <div>
-                  <button
-                    style={{
-                      fontSize: "11px",
-                      width: "60px",
-                      height: "25px",
-                      backgroundColor: "#C6003d",
-                      color: "whitesmoke",
-                      borderRadius: "3px",
-                      outline: "none",
-                      border: "none",
-                      cursor: "pointer",
-                      marginLeft: "10px",
-                    }}
-                    className={"like-button " + (isLike ? "liked" : "")}
-                    onClick={onLikeButtonClick}
-                  >
-                    {"Likes"} | {like}
-                  </button>
+              <>
+                <div className={Commentcontainer.commentcontainer}>
+                  {text}
+                  <div></div>
+
+                  <div className={Likecomment.likecomment}>
+                    <div
+                      className={Likescommentinner.likescommentinner}
+                      onClick={handleLike}
+                    ></div>
+                  </div>
                 </div>
 
-                <div className={Likecomment.likecomment}>
-                  <div
-                    className={Likescommentinner.likescommentinner}
-                    onClick={handleLike}
-                  ></div>
-                </div>
-              </div>
+                <button
+                  style={{
+                    fontSize: "11px",
+                    width: "60px",
+                    height: "15px",
+                    backgroundColor: "whitesmoke",
+                    color: "gray",
+                    position: "relative",
+                    bottom: "10px",
+                    outline: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    marginLeft: "5px",
+                  }}
+                  className={"like-button " + (isLike ? "liked" : "")}
+                  onClick={onLikeButtonClick}
+                >
+                  {"Likes"} | {like}
+                </button>
+              </>
             ))}
+
             <div className="comment-flexbox">
               <input
                 style={{
@@ -190,43 +192,6 @@ export default function LikeButton({ userId, postId, currentUser }) {
       ) : (
         <></>
       )}
-      {/* <div className="main-container">
-        {comments.map((text) => (
-          <div className="comment-container">{text}</div>
-        ))}
-        <div className="comment-flexbox">
-          <textarea
-            value={comment}
-            onChange={onChangeHandler}
-            className="input-box"
-          />
-          <input
-            style={{
-              height: "30px",
-              backgroundColor: "whitesmoke",
-              paddingLeft: "10px",
-              borderRadius: "3px",
-              border: "1px solid #737373",
-              color: "#4b4b4b",
-              fontSize: "12px",
-              fontWeight: "bold",
-              width: "97%",
-              position: "relative",
-              top: "10px",
-              borderColor: "transparent",
-              textDecoration: "none",
-            }}
-            onChange={onChangeHandler}
-            placeholder="Add a Comment"
-            className="form-control"
-            name="comment"
-            value={comment}
-          />
-          <button onClick={onClickHandler} className="comment-button">
-            Submit
-          </button>
-        </div>
-      </div> */}
     </div>
   );
 }
