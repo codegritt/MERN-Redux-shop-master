@@ -169,6 +169,7 @@ export default function LikeButton({ userId, postId, currentUser }) {
                   top: "10px",
                   borderColor: "transparent",
                   textDecoration: "none",
+                  boxShadow: "10px 5px 25px gray",
                 }}
                 onChange={onChangeHandler}
                 placeholder="Add a Comment"

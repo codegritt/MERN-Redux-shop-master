@@ -8,6 +8,7 @@ import Footer4 from "../Footer4";
 import Footer2 from "../Footer2";
 import Footer3 from "../Footer3";
 import { getCurrentUserData } from "../../api/FirestoreAPI";
+import NewsList from "../NewsFeed/NewsList";
 
 function SnapFeed() {
   useMemo(() => {
@@ -18,6 +19,7 @@ function SnapFeed() {
       <Sidebar />
 
       <PostStatus />
+      <NewsList />
 
       <div className={Footer__body.footer__body}>
         <FooterImage />
