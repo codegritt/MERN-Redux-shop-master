@@ -131,3 +131,38 @@
   border-radius: 5px;
   padding: 5px;
 }
+
+.replycommentcontainer {
+  margin: 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 5px;
+  width: 75%;
+  position: relative;
+  left: 50px;
+}
+
+.addreplycommentbtn {
+  width: 80px;
+  font-size: 10px;
+  height: 35px;
+  background-color: #c6003d;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  left: 50px;
+}
+
+.replyreply {
+  color: gray;
+  font-size: 11px;
+  position: relative;
+  left: 150px;
+  bottom: 33px;
+}
