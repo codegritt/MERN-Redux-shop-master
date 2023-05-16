@@ -72,23 +72,33 @@ const AutoComplete = ({ data }) => {
 
   return (
     <>
-      <div className={Autocompletemod.autocompletemod}>
-        <input
-          type="text"
-          value={value}
-          onChange={handleChange}
-          onKeyDown={handleKeyDown}
-          className="form-control"
-          style={{
-            height: "20px",
-            position: "relative",
-            top: "0px",
-            fontSize: "15px",
-          }}
-        />
-        <span className={Sugglist.sugglist}>
-          {suggestionsActive && <Suggestions />}
-        </span>
+      <div
+        style={{
+          height: "-45%",
+          width: "162px",
+          position: "relative",
+          bottom: "15px",
+        }}
+      >
+        <div className={Autocompletemod.autocompletemod}>
+          <input
+            type="text"
+            value={value}
+            onChange={handleChange}
+            onKeyDown={handleKeyDown}
+            className="form-control"
+            style={{
+              height: "15px",
+              position: "relative",
+              top: "0px",
+              fontSize: "13px",
+              margin: "-5px",
+            }}
+          />
+          <span className={Sugglist.sugglist}>
+            {suggestionsActive && <Suggestions />}
+          </span>
+        </div>
       </div>
     </>
   );
