@@ -15,6 +15,8 @@ import UpdateBookInfo from "./components/UpdateBookInfo";
 import CreateBook from "./components/CreateBook";
 import ShowBookList from "./components/ShowBookList";
 import SnapFeed from "./components/SnapFeed/SnapFeed";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const App = () => {
   return (
@@ -22,6 +24,10 @@ export const App = () => {
       <BrowserRouter>
         <Appheader />
         <div className="App">
+          <ToastContainer
+            theme="colored"
+            position="top-center"
+          ></ToastContainer>
           <div className={AppHome.appHome}>
             <Header1 />
 
