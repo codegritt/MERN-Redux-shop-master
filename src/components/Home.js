@@ -2,7 +2,6 @@ import React, { createContext } from "react";
 import AppHome from "./Home.module.css";
 import App__body from "./Home.module.css";
 import Sidebar from "./Sidebar";
-import Feed from "./Feed";
 import ToggleCard from "./ToggleCard";
 import ReduxHome from "./ReduxHome";
 import Main__body from "./Home.module.css";
@@ -24,7 +23,6 @@ function Home() {
       <div className={AppHome.appHome}>
         <div className={App__body.app__body}>
           <Sidebar />
-          {/* <Feed /> */}
           <ImageSlider />
           <ToggleCard />
           <BooksContext.Provider value={true}>

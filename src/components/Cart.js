@@ -88,23 +88,29 @@ class Cart extends Component {
     );
     return (
       <>
-        <Sidebar />
+        <div
+          style={{
+            backgroundColor: "whitesmoke",
+          }}
+        >
+          <Sidebar />
 
-        <div className={Cartcontainer.cartcontainer}>
-          <div className={Cartcart.cartcart}>
-            <h5 className={Cartcarth.cartcarth}>You have ordered:</h5>
-            <ul style={{ margin: "20px" }} className="collection">
-              {addedItems}
-            </ul>
+          <div className={Cartcontainer.cartcontainer}>
+            <div className={Cartcart.cartcart}>
+              <h5 className={Cartcarth.cartcarth}>You have ordered:</h5>
+              <ul style={{ margin: "20px" }} className="collection">
+                {addedItems}
+              </ul>
+            </div>
+            <Recipe />
           </div>
-          <Recipe />
-        </div>
-        <div className={Footer__body.footer__body}>
-          <FooterImage />
-          <Footer1 />
-          <Footer4 />
-          <Footer2 />
-          <Footer3 />
+          <div className={Footer__body.footer__body}>
+            <FooterImage />
+            <Footer1 />
+            <Footer4 />
+            <Footer2 />
+            <Footer3 />
+          </div>
         </div>
       </>
     );
