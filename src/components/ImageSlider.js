@@ -23,7 +23,6 @@ class ImageSlider extends Component {
       duration: 3000,
       transitionDuration: 300,
       infinite: true,
-      indicators: true,
       arrows: true,
       onChange: (oldIndex, newIndex) => {
         console.log(`slide transition from ${oldIndex} to ${newIndex}`);
