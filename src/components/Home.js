@@ -19,29 +19,31 @@ export const BooksContext = createContext();
 
 function Home() {
   return (
-    <div className={AppHome.appHome}>
-      <div className={App__body.app__body}>
-        <Sidebar />
-        <Feed />
-        <ToggleCard />
-        <BooksContext.Provider value={true}>
-          <div style={{ position: "relative", right: "100px", top: "350px" }}>
-            <UseContextHook />
-          </div>
-        </BooksContext.Provider>
+    <>
+      <div className={AppHome.appHome}>
+        <div className={App__body.app__body}>
+          <Sidebar />
+          <Feed />
+          <ToggleCard />
+          <BooksContext.Provider value={true}>
+            <div style={{ position: "relative", right: "100px", top: "350px" }}>
+              <UseContextHook />
+            </div>
+          </BooksContext.Provider>
+        </div>
+        <div className={Main__body.main__body}>
+          <ReduxHome />
+          <FeedAPIstore />
+        </div>
+        <div className={Footer__body.footer__body}>
+          <FooterImage />
+          <Footer1 />
+          <Footer4 />
+          <Footer2 />
+          <Footer3 />
+        </div>
       </div>
-      <div className={Main__body.main__body}>
-        <ReduxHome />
-        <FeedAPIstore />
-      </div>
-      <div className={Footer__body.footer__body}>
-        <FooterImage />
-        <Footer1 />
-        <Footer4 />
-        <Footer2 />
-        <Footer3 />
-      </div>
-    </div>
+    </>
   );
 }
 

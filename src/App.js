@@ -29,6 +29,7 @@ export const App = () => {
             theme="colored"
             position="top-center"
           ></ToastContainer>
+
           <div className={AppHome.appHome}>
             <Header1 />
 
