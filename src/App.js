@@ -17,6 +17,7 @@ import ShowBookList from "./components/ShowBookList";
 import SnapFeed from "./components/SnapFeed/SnapFeed";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import SupportEngine from "./components/Chatbot/SupportEngine";
 
 export const App = () => {
   return (
@@ -33,6 +34,7 @@ export const App = () => {
 
             <Header2 />
             <HamburgerMenu />
+            <SupportEngine />
           </div>
 
           {/* <Navbar /> */}
@@ -46,7 +48,7 @@ export const App = () => {
             <Route path="/create-book" element={<CreateBook />} />
             <Route path="/edit-book/:id" element={<UpdateBookInfo />} />
             <Route path="/show-book/:id" element={<ShowBookDetails />} />
-            <Route path="snapfeed" element={<SnapFeed />} />
+            <Route path="/snapfeed" element={<SnapFeed />} />
           </Routes>
         </div>
       </BrowserRouter>
