@@ -40,7 +40,7 @@
 
 .main-news-div {
   width: 28%;
-  position: sticky;
+  position: relative;
   left: 950px;
   bottom: 1600px;
   border: 1px solid #b7b7b7;
