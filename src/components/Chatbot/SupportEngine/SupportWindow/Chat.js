@@ -91,11 +91,28 @@ export default () => {
       </div>
       <form className="chat-controls" onSubmit={(e) => e.preventDefault()}>
         <input
+          style={{
+            fontSize: "13px",
+            position: "relative",
+            top: "10px",
+            marginLeft: "10px",
+          }}
           className="form-control"
           ref={chatTxt}
           placeholder="Type message here.."
         />
-        <button onClick={() => sendChat()}>Send</button>
+        <button
+          style={{
+            backgroundColor: "#c6003d",
+            height: "30px",
+            marginRight: "5px",
+            position: "relative",
+            top: "20px",
+          }}
+          onClick={() => sendChat()}
+        >
+          Send
+        </button>
       </form>
     </div>
   );

@@ -80,11 +80,14 @@ code {
 }
 
 .chat-message.you .message-text {
-  background-color: greenyellow;
+  background-color: #c6003d;
+  font-size: 13px;
+  color: whitesmoke;
 }
 
 .chat-message.not-you .message-text {
   background-color: lightgrey;
+  font-size: 13px;
 }
 
 .chat-message .timestamp {
