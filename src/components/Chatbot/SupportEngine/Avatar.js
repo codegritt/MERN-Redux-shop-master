@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "../SupportEngine/SupportWindow/SupportWindow.css";
 import { styles } from "./styles";
 
 const Avatar = (props) => {

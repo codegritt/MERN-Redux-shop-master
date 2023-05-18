@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./SupportWindow.css";
 import { styles } from "../styles";
 import Chat from "./Chat";
 
