@@ -9,7 +9,11 @@
   font-weight: 100;
   font-size: 0.8em;
   position: relative;
-  bottom: 90px;
+  bottom: 38px;
+  /* background-color: whitesmoke; */
+  height: 25px;
+  padding-bottom: 10px;
+  width: 100%;
 }
 
 .FeedOption__title {

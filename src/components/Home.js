@@ -14,6 +14,7 @@ import Footer4 from "./Footer4";
 import Footer2 from "./Footer2";
 import Footer3 from "./Footer3";
 import UseContextHook from "./Hooks/UseContextHook";
+import ImageSlider from "./ImageSlider";
 
 export const BooksContext = createContext();
 
@@ -23,7 +24,8 @@ function Home() {
       <div className={AppHome.appHome}>
         <div className={App__body.app__body}>
           <Sidebar />
-          <Feed />
+          {/* <Feed /> */}
+          <ImageSlider />
           <ToggleCard />
           <BooksContext.Provider value={true}>
             <div style={{ position: "relative", right: "100px", top: "350px" }}>
