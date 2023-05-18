@@ -2,8 +2,9 @@
   width: 50%;
   margin: auto;
   position: relative;
-  bottom: 352px;
+  bottom: 391px;
   left: 30px;
+  height: 350px;
 }
 
 .each-slide > div {

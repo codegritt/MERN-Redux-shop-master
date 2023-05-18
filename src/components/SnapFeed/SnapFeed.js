@@ -15,7 +15,7 @@ function SnapFeed() {
     getCurrentUserData();
   }, []);
   return (
-    <div>
+    <div style={{ backgroundColor: "whitesmoke" }}>
       <Sidebar />
 
       <PostStatus />
