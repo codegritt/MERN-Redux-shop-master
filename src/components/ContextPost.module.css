@@ -43,3 +43,9 @@
 .contextimg {
   width: 88px;
 }
+
+@media only screen and (min-width: 375px) and (max-width: 1200px) {
+  .contextdiv {
+    display: none;
+  }
+}

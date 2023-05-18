@@ -7,11 +7,10 @@
   position: relative;
   z-index: 10;
   width: 320%;
-
   border-radius: 3px;
 }
 
 .suggestionsmod {
   color: gray;
-  font-size: 14px;
+  font-size: 13px;
 }

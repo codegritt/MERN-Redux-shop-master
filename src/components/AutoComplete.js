@@ -77,7 +77,7 @@ const AutoComplete = ({ data }) => {
           height: "-45%",
           width: "162px",
           position: "relative",
-          bottom: "15px",
+          bottom: "5px",
         }}
       >
         <div className={Autocompletemod.autocompletemod}>

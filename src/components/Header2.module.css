@@ -173,6 +173,17 @@
     font-size: 14px;
     border-radius: 0 3px 3px 0 !important;
   }
+
+  .snapfeedtext {
+    font-size: 13px;
+    vertical-align: text-top;
+    padding-right: 10px;
+    color: #fff;
+    line-height: 9px;
+    position: relative;
+    left: 100px;
+    top: 5px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
