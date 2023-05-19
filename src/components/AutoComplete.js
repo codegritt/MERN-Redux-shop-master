@@ -8,23 +8,6 @@ const AutoComplete = ({ data }) => {
   const [suggestionIndex, setSuggestionIndex] = useState(0);
   const [suggestionsActive, setSuggestionsActive] = useState(false);
   const [value, setValue] = useState("");
-  const wrapperRef = useRef(null);
-  UseOutsideAlerter(wrapperRef);
-  const [visible, setVisible] = useState(false);
-
-  function UseOutsideAlerter(ref) {
-    useEffect(() => {
-      function handleClickOutside(event) {
-        if (ref.current && !ref.current.contains(event.target)) {
-          setVisible(false);
-        }
-      }
-      document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
-    }, [ref]);
-  }
 
   const handleChange = (e) => {
     const query = e.target.value.toLowerCase();
@@ -71,7 +54,7 @@ const AutoComplete = ({ data }) => {
 
   const Suggestions = () => {
     return (
-      <ul className={Suggestionsmod.suggestionsmod} ref={wrapperRef}>
+      <ul className={Suggestionsmod.suggestionsmod}>
         {suggestions.map((suggestion, index) => {
           return (
             <li
@@ -96,11 +79,9 @@ const AutoComplete = ({ data }) => {
           position: "relative",
           bottom: "5px",
         }}
-        ref={wrapperRef}
       >
-        <div className={Autocompletemod.autocompletemod} visible={visible}>
+        <div className={Autocompletemod.autocompletemod}>
           <input
-            onClick={() => setVisible(true)}
             type="text"
             value={value}
             onChange={handleChange}
@@ -114,8 +95,8 @@ const AutoComplete = ({ data }) => {
               margin: "-5px",
             }}
           />
-          <span className={Sugglist.sugglist} ref={wrapperRef}>
-            {suggestionsActive && <Suggestions ref={wrapperRef} />}
+          <span className={Sugglist.sugglist}>
+            {suggestionsActive && <Suggestions />}
           </span>
         </div>
       </div>
