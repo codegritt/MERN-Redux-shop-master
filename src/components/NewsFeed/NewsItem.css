@@ -40,9 +40,11 @@
 
 .main-news-div {
   width: 28%;
-  position: relative;
+  position: absolute;
+  /* left: 950px;
+  bottom: 1600px; */
   left: 950px;
-  bottom: 1600px;
+  top: 100px;
   border: 1px solid #b7b7b7;
   background-color: whitesmoke;
   border-radius: 7px;

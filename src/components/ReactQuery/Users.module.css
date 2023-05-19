@@ -1,0 +1,29 @@
+.userslist {
+  width: 15%;
+  position: absolute;
+  /* left: 80px;
+  bottom: 750px; */
+  left: 80px;
+  top: 1200px;
+  border: 1px solid #b7b7b7;
+  background-color: whitesmoke;
+  border-radius: 7px;
+  box-shadow: 10px 10px 20px 10px gray;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.userslistheader {
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+}
+
+.userslistclass {
+  color: gray;
+}
+
+.userslistclassmod {
+  font-size: 12px;
+}
