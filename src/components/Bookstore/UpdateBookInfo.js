@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import "../App.css";
+import "../../App.css";
 import UpdateBookInfomod from "./UpdateBookInfo.module.css";
 import UpdateBookInfobut from "./UpdateBookInfo.module.css";
 import UpdateBookInfosub from "./UpdateBookInfo.module.css";

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ReduxHome from "./components/ReduxHome";
-import Cart from "./components/Cart";
+import ReduxHome from "./components/Redux/ReduxHome";
+import Cart from "./components/Redux/Cart";
 import Home from "./components/Home";
 import AppHome from "./components/Home.module.css";
 import Header1 from "./components/Header1";
@@ -10,14 +10,15 @@ import HamburgerMenu from "./components/HamburgerMenu";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Appheader from "./components/Appheader";
-import ShowBookDetails from "./components/ShowBookDetails";
-import UpdateBookInfo from "./components/UpdateBookInfo";
-import CreateBook from "./components/CreateBook";
-import ShowBookList from "./components/ShowBookList";
+import ShowBookDetails from "./components/Bookstore/ShowBookDetails";
+import UpdateBookInfo from "./components/Bookstore/UpdateBookInfo";
+import CreateBook from "./components/Bookstore/CreateBook";
+import ShowBookList from "./components/Bookstore/ShowBookList";
 import SnapFeed from "./components/SnapFeed/SnapFeed";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SupportEngine from "./components/Chatbot/SupportEngine";
+import CheckoutPage from "./components/Redux/CheckoutPage";
 
 export const App = () => {
   return (
@@ -45,6 +46,7 @@ export const App = () => {
             <Route path="/register" element={<Register />}></Route>
             <Route path="/reduxhome" element={<ReduxHome />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<CheckoutPage />} />
             <Route exact path="/home2" element={<ShowBookList />} />
             <Route path="/create-book" element={<CreateBook />} />
             <Route path="/edit-book/:id" element={<UpdateBookInfo />} />

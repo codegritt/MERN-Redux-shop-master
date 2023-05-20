@@ -3,7 +3,7 @@ import AppHome from "./Home.module.css";
 import App__body from "./Home.module.css";
 import Sidebar from "./Sidebar";
 import ToggleCard from "./ToggleCard";
-import ReduxHome from "./ReduxHome";
+import ReduxHome from "./Redux/ReduxHome";
 import Main__body from "./Home.module.css";
 import FeedAPIstore from "./FeedAPIstore";
 import Footer__body from "./Home.module.css";

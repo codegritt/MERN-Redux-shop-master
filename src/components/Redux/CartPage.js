@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 //import { addShipping } from './actions/cartActions'
-class Recipe extends Component {
+class CartPage extends Component {
   componentWillUnmount() {
     if (this.refs.shipping.checked) this.props.substractShipping();
   }
@@ -68,4 +68,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Recipe);
+export default connect(mapStateToProps, mapDispatchToProps)(CartPage);

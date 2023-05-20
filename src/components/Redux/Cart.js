@@ -5,18 +5,18 @@ import {
   removeItem,
   addQuantity,
   subtractQuantity,
-} from "./actions/cartActions";
-import Recipe from "./Recipe";
-import Sidebar from "./Sidebar";
+} from "../actions/cartActions";
+import Recipe from "./CartPage";
+import Sidebar from "../Sidebar";
 import Cartcontainer from "./Cart.module.css";
 import Cartcart from "./Cart.module.css";
 import Cartcarth from "./Cart.module.css";
-import Footer__body from "./Home.module.css";
-import FooterImage from "./FooterImage";
-import Footer1 from "./Footer1";
-import Footer4 from "./Footer4";
-import Footer2 from "./Footer2";
-import Footer3 from "./Footer3";
+import Footer__body from "../Home.module.css";
+import FooterImage from "../FooterImage";
+import Footer1 from "../Footer1";
+import Footer4 from "../Footer4";
+import Footer2 from "../Footer2";
+import Footer3 from "../Footer3";
 
 class Cart extends Component {
   //to remove the item completely
