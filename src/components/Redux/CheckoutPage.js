@@ -5,6 +5,7 @@ import Breadcrumbsmain from "./CheckoutPage.module.css";
 import Breadcrumbscon from "./CheckoutPage.module.css";
 import Summarytax from "./CheckoutPage.module.css";
 import Summarytaxx from "./CheckoutPage.module.css";
+import ExpansionPanel from "./ExpansionPanel";
 
 class CheckoutPage extends Component {
   constructor(props) {
@@ -45,7 +46,7 @@ class CheckoutPage extends Component {
         </div>
 
         <hr></hr>
-
+        <ExpansionPanel />
         <div className={Summarytax.summarytax}>
           <h6 style={{ fontWeight: "bold" }}>Price Summary</h6>
           <hr></hr>

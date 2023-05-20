@@ -12,7 +12,7 @@
 
 .summarytax {
   width: 30%;
-  position: relative;
+  position: absolute;
   padding: 10px;
   padding-bottom: 0;
   padding-top: 0;
@@ -23,7 +23,8 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  float: right;
+  left: 870px;
+  bottom: 105px;
 }
 
 .summarytaxx {
