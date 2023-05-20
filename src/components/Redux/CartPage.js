@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 //import { addShipping } from './actions/cartActions'
 class CartPage extends Component {
   componentWillUnmount() {
@@ -33,17 +34,19 @@ class CartPage extends Component {
           </li>
         </div>
         <div className="checkout">
-          <button
-            style={{
-              backgroundColor: "#c6003d",
-              position: "relative",
-              borderRadius: "5px",
-              color: "white",
-              fontSize: "15px",
-            }}
-          >
-            Checkout
-          </button>
+          <Link to="/checkout">
+            <button
+              style={{
+                backgroundColor: "#c6003d",
+                position: "relative",
+                borderRadius: "5px",
+                color: "white",
+                fontSize: "15px",
+              }}
+            >
+              Checkout
+            </button>
+          </Link>
         </div>
       </div>
     );
