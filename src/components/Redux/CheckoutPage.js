@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Breadcrumbsmain from "./CheckoutPage.module.css";
 import Breadcrumbscon from "./CheckoutPage.module.css";
+import Summarytax from "./CheckoutPage.module.css";
+import Summarytaxx from "./CheckoutPage.module.css";
 
 class CheckoutPage extends Component {
   constructor(props) {
@@ -28,7 +30,7 @@ class CheckoutPage extends Component {
   render() {
     return (
       <div className={Breadcrumbscon.breadcrumbscon}>
-        <h6>Checkout Page</h6>
+        <h6 style={{ fontWeight: "bold" }}>Checkout Page</h6>
 
         <div>
           <Link to="/">
@@ -41,20 +43,46 @@ class CheckoutPage extends Component {
             <span className={Breadcrumbsmain.breadcrumbsmain}>Checkout</span>
           </Link>
         </div>
-        <div className="collection">
-          <li className="collection-item">
+
+        <hr></hr>
+
+        <div className={Summarytax.summarytax}>
+          <h6 style={{ fontWeight: "bold" }}>Price Summary</h6>
+          <hr></hr>
+          <div className={Summarytaxx.summarytaxx}>
+            <ul style={{ display: "flex" }}>
+              <p>Order Subtotal:</p>
+              <p style={{ paddingLeft: "200px" }}> {this.props.total}</p>
+            </ul>
+            <ul style={{ display: "flex" }}>
+              <p>Coupons:</p>
+              <p style={{ paddingLeft: "238px" }}> 0$</p>
+            </ul>
+            <ul style={{ display: "flex" }}>
+              <p>Promotion:</p>
+              <p style={{ paddingLeft: "228px" }}>0$</p>
+            </ul>
+
+            <ul style={{ display: "flex" }}>
+              <p>Estimated Tax (0%):</p>
+              <p style={{ paddingLeft: "174px" }}> 0$</p>
+            </ul>
+
             <label>
               <input
                 type="checkbox"
                 ref="shipping"
                 onChange={this.handleChecked}
               />
-              <span>Shipping(+6$)</span>
+              <span>Shipping Fee(+6$)</span>
             </label>
-          </li>
-          <li className="collection-item">
-            <b>Total: {this.props.total} $</b>
-          </li>
+
+            <hr></hr>
+            <ul style={{ display: "flex" }}>
+              <b>Total: </b>
+              <p style={{ paddingLeft: "260px" }}>{this.props.total}$</p>
+            </ul>
+          </div>
         </div>
       </div>
     );

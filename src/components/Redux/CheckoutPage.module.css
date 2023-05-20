@@ -6,5 +6,26 @@
 .breadcrumbscon {
   color: gray;
   width: 100%;
-  padding: 100px;
+  padding: 80px;
+  padding-top: 0;
+}
+
+.summarytax {
+  width: 30%;
+  position: relative;
+  padding: 10px;
+  padding-bottom: 0;
+  padding-top: 0;
+  border: 1px solid #b7b7b7;
+  background-color: whitesmoke;
+  border-radius: 7px;
+  box-shadow: 10px 10px 20px 10px gray;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  float: right;
+}
+
+.summarytaxx {
+  font-size: 15px;
 }
