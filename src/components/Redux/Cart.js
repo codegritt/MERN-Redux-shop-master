@@ -17,11 +17,15 @@ import Footer1 from "../Footer1";
 import Footer4 from "../Footer4";
 import Footer2 from "../Footer2";
 import Footer3 from "../Footer3";
+import { ToastContainer, toast } from "react-toastify";
 
 class Cart extends Component {
   //to remove the item completely
   handleRemove = (id) => {
     this.props.removeItem(id);
+    toast.success("Item removed !", {
+      position: toast.POSITION.TOP_RIGHT,
+    });
   };
   //to add the quantity
   handleAddQuantity = (id) => {
@@ -79,6 +83,7 @@ class Cart extends Component {
               >
                 Remove
               </button>
+              <ToastContainer />
             </div>
           </li>
         );

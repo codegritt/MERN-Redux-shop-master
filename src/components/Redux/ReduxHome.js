@@ -10,6 +10,13 @@ import Redux_plusicon from "./ReduxHome.module.css";
 import Redux_button from "./ReduxHome.module.css";
 import Cardcontent from "./ReduxHome.module.css";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+
+const showToastMessage = () => {
+  toast.success("Item added !", {
+    position: toast.POSITION.TOP_RIGHT,
+  });
+};
 
 class ReduxHome extends Component {
   handleClick = (id) => {
@@ -37,7 +44,13 @@ class ReduxHome extends Component {
               }}
             >
               <Link to="/cart">
-                <button className={Redux_plusicon.redux_plusicon}>ADD</button>
+                <button
+                  onClick={showToastMessage}
+                  className={Redux_plusicon.redux_plusicon}
+                >
+                  ADD
+                </button>
+                <ToastContainer />
               </Link>
             </span>
           </div>
