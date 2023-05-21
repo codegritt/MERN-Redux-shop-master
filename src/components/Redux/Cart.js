@@ -104,6 +104,8 @@ class Cart extends Component {
             </div>
             <Recipe />
           </div>
+        </div>
+        <div style={{ position: "relative", top: "400px" }}>
           <div className={Footer__body.footer__body}>
             <FooterImage />
             <Footer1 />
