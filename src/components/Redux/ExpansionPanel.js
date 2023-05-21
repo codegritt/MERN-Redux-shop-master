@@ -216,13 +216,14 @@ function ExpansionPanel() {
             <span>
               <button
                 style={{
-                  backgroundColor: "black",
+                  backgroundColor: "#c6003d",
                   height: "30px",
                   borderRadius: "5px",
                   fontSize: "10px",
                   position: "relative",
                   top: "5px",
                   right: "5px",
+                  color: "whitesmoke",
                 }}
                 class="btn btn-primary"
               >
@@ -252,13 +253,14 @@ function ExpansionPanel() {
             <span>
               <button
                 style={{
-                  backgroundColor: "black",
+                  backgroundColor: "#c6003d",
                   height: "30px",
                   borderRadius: "5px",
                   fontSize: "10px",
                   position: "relative",
                   top: "5px",
                   right: "5px",
+                  color: "whitesmoke",
                 }}
                 class="btn btn-primary"
               >
@@ -452,7 +454,7 @@ function ExpansionPanel() {
         />
         <button
           style={{
-            backgroundColor: "black",
+            backgroundColor: "#c6003d",
             height: "30px",
             borderRadius: "5px",
             fontSize: "12px",
@@ -460,10 +462,11 @@ function ExpansionPanel() {
             top: "5px",
             left: "150px",
             width: "50%",
+            color: "whitesmoke",
           }}
           class="btn btn-primary"
         >
-          Place Order
+          Create Order
         </button>
       </Accordion>
       <Accordion isExpand={true} title="Pay with PayPal">
@@ -492,7 +495,7 @@ function ExpansionPanel() {
           <div>
             <button
               style={{
-                backgroundColor: "black",
+                backgroundColor: "#c6003d",
                 height: "35px",
                 borderRadius: "3px",
                 fontSize: "12px",
@@ -501,6 +504,7 @@ function ExpansionPanel() {
                 left: "0px",
                 width: "50%",
                 marginTop: "30px",
+                color: "whitesmoke",
               }}
               class="btn btn-primary"
             >
@@ -523,7 +527,7 @@ function ExpansionPanel() {
       </Accordion>
       <button
         style={{
-          backgroundColor: "black",
+          backgroundColor: "#c6003d",
           height: "35px",
           borderRadius: "3px",
           fontSize: "12px",
@@ -532,10 +536,11 @@ function ExpansionPanel() {
           left: "0px",
           width: "59%",
           marginTop: "30px",
+          color: "whitesmoke  ",
         }}
         class="btn btn-primary"
       >
-        CREATE ORDER
+        PLACE ORDER
       </button>
     </div>
   );
