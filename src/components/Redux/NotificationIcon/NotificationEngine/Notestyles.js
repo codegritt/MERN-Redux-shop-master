@@ -2,11 +2,11 @@ export const Notestyles = {
   NotesupportWindow: {
     // Position
     position: "absolute",
-    bottom: "400px",
+    bottom: "440px",
     right: "50px",
     // Size
-    width: "1350px",
-    height: "230px",
+    width: "450px",
+    height: "190px",
     maxWidth: "calc(100% - 48px)",
     maxHeight: "calc(100% - 48px)",
     backgroundColor: "white",

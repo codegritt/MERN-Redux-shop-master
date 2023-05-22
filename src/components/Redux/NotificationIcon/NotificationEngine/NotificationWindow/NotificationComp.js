@@ -13,6 +13,11 @@ import Recipe from "../../../CartPage";
 import NoteCartcontainer from "./NotificationComp.module.css";
 import NoteCartcart from "./NotificationComp.module.css";
 import NoteCartcarth from "./NotificationComp.module.css";
+import Itemimgimg from "./NotificationComp.module.css";
+import Notetitle from "./NotificationComp.module.css";
+import Notedesc from "./NotificationComp.module.css";
+import Noteprize from "./NotificationComp.module.css";
+import Notequan from "./NotificationComp.module.css";
 import { Link } from "react-router-dom";
 
 export class NotificationComp extends Component {
@@ -33,18 +38,22 @@ export class NotificationComp extends Component {
       this.props.items.map((item) => {
         return (
           <li className="collection-item avatar" key={item.id}>
-            <div className="item-img">
-              <img src={item.img} alt={item.img} className="" />
+            <div>
+              <img
+                className={Itemimgimg.itemimgimg}
+                src={item.img}
+                alt={item.img}
+              />
             </div>
 
             <div className="item-desc">
-              <span className="title">{item.title}</span>
-              <p>{item.desc}</p>
+              <span className={Notetitle.notetitle}>{item.title}</span>
+              <p className={Notedesc.notedesc}>{item.desc}</p>
               <p>
-                <b>Price: {item.price}$</b>
+                <b className={Noteprize.noteprize}>Price: {item.price}$</b>
               </p>
               <p>
-                <b>Quantity: {item.quantity}</b>
+                <b className={Notequan.notequan}>Quantity: {item.quantity}</b>
               </p>
               <div className="add-remove">
                 <Link to="/cart">
@@ -69,6 +78,13 @@ export class NotificationComp extends Component {
                 </Link>
               </div>
               <button
+                style={{
+                  fontSize: "9px",
+                  height: "20px",
+                  paddingBottom: "30px",
+                  position: "relative",
+                  bottom: "35px",
+                }}
                 className="waves-effect waves-light btn pink remove"
                 onClick={() => {
                   this.handleNoteRemove(item.id);
@@ -84,26 +100,37 @@ export class NotificationComp extends Component {
       <p>Nothing.</p>
     );
     return (
-      // <div className={Notecontainer.notecontainer}>
-      <div className={Chatlist.chatlist}>
-        <div
+      <>
+        {/* <div className={Notecontainer.notecontainer}>
+ <div className={Chatlist.chatlist}> */}
+        {/* <div
           style={{
             backgroundColor: "whitesmoke",
           }}
+        > */}
+        {/* <div className={NoteCartcontainer.notecartcontainer}> */}
+        {/* <div className={NoteCartcart.notecartcart}> */}
+        <ul
+          style={{
+            width: "105%",
+            height: "170px",
+            margin: "10px",
+            float: "right",
+            overflowX: "auto",
+            overflowY: "auto",
+          }}
+          className="collection"
         >
-          <div className={NoteCartcontainer.notecartcontainer}>
-            <div className={NoteCartcart.notecartcart}>
-              <h5 className={NoteCartcarth.notecartcarth}>You have ordered:</h5>
-              <ul style={{ margin: "20px" }} className="collection">
-                {addedItems}
-              </ul>
-            </div>
-            <Recipe />
-          </div>
-        </div>
-        <div style={{ position: "relative", top: "400px" }}></div>
-      </div>
-      // </div>
+          {addedItems}
+        </ul>
+        {/* </div> */}
+
+        {/* </div> */}
+        {/* </div> */}
+        {/* <div style={{ position: "relative", top: "400px" }}></div> */}
+        {/* </div>
+</div> */}
+      </>
     );
   }
 }
