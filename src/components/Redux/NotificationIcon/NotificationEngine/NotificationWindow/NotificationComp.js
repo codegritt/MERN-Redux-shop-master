@@ -1,18 +1,12 @@
 /* eslint-disable import/no-anonymous-default-export */
 
 import React, { Component } from "react";
-import Notecontainer from "./NotificationComp.module.css";
-import Chatlist from "./NotificationComp.module.css";
 import {
-  removeNoteItem,
+  removeItem,
   addNoteQuantity,
   subtractNoteQuantity,
 } from "../../../../actions/cartActions";
 import { connect } from "react-redux";
-import Recipe from "../../../CartPage";
-import NoteCartcontainer from "./NotificationComp.module.css";
-import NoteCartcart from "./NotificationComp.module.css";
-import NoteCartcarth from "./NotificationComp.module.css";
 import Itemimgimg from "./NotificationComp.module.css";
 import Notetitle from "./NotificationComp.module.css";
 import Notedesc from "./NotificationComp.module.css";
@@ -22,8 +16,8 @@ import { Link } from "react-router-dom";
 
 export class NotificationComp extends Component {
   //to remove the item completely
-  handleNoteRemove = (id) => {
-    this.props.removeNoteItem(id);
+  handleRemove = (id) => {
+    this.props.removeItem(id);
   };
   //to add the quantity
   handleNoteAddQuantity = (id) => {
@@ -87,7 +81,7 @@ export class NotificationComp extends Component {
                 }}
                 className="waves-effect waves-light btn pink remove"
                 onClick={() => {
-                  this.handleNoteRemove(item.id);
+                  this.handleRemove(item.id);
                 }}
               >
                 Remove
@@ -97,19 +91,19 @@ export class NotificationComp extends Component {
         );
       })
     ) : (
-      <p>Nothing.</p>
+      <p
+        style={{
+          padding: "20px",
+          marginLeft: "20px",
+          fontSize: "12px",
+          textAlign: "center",
+        }}
+      >
+        Nothing to show!
+      </p>
     );
     return (
       <>
-        {/* <div className={Notecontainer.notecontainer}>
- <div className={Chatlist.chatlist}> */}
-        {/* <div
-          style={{
-            backgroundColor: "whitesmoke",
-          }}
-        > */}
-        {/* <div className={NoteCartcontainer.notecartcontainer}> */}
-        {/* <div className={NoteCartcart.notecartcart}> */}
         <ul
           style={{
             width: "105%",
@@ -123,13 +117,6 @@ export class NotificationComp extends Component {
         >
           {addedItems}
         </ul>
-        {/* </div> */}
-
-        {/* </div> */}
-        {/* </div> */}
-        {/* <div style={{ position: "relative", top: "400px" }}></div> */}
-        {/* </div>
-</div> */}
       </>
     );
   }
@@ -143,8 +130,8 @@ const mapStateToProps = (state) => {
 };
 const mapDispatchToProps = (dispatch) => {
   return {
-    removeNoteItem: (id) => {
-      dispatch(removeNoteItem(id));
+    removeItem: (id) => {
+      dispatch(removeItem(id));
     },
     addNoteQuantity: (id) => {
       dispatch(addNoteQuantity(id));

@@ -18,6 +18,7 @@ import Footer4 from "../Footer4";
 import Footer2 from "../Footer2";
 import Footer3 from "../Footer3";
 import { ToastContainer, toast } from "react-toastify";
+import NotificationEngine from "./NotificationIcon/NotificationEngine";
 
 class Cart extends Component {
   //to remove the item completely
@@ -36,6 +37,15 @@ class Cart extends Component {
     this.props.subtractQuantity(id);
   };
   render() {
+    <div>
+      <NotificationEngine
+        style={{
+          border: "3px solid green",
+          backgroundColor: "yellow",
+          color: "black",
+        }}
+      />
+    </div>;
     let addedItems = this.props.items.length ? (
       this.props.items.map((item) => {
         return (
@@ -89,7 +99,7 @@ class Cart extends Component {
         );
       })
     ) : (
-      <p>Nothing.</p>
+      <p style={{ padding: "20px" }}>Nothing to show!</p>
     );
     return (
       <>
