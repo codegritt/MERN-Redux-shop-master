@@ -11,6 +11,9 @@ import Footer1 from "../Footer1";
 import Footer4 from "../Footer4";
 import Footer2 from "../Footer2";
 import Footer3 from "../Footer3";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import NotificationEngine from "./NotificationIcon/NotificationEngine";
 
 class CheckoutPage extends Component {
   constructor(props) {
@@ -36,6 +39,10 @@ class CheckoutPage extends Component {
   render() {
     return (
       <>
+        <div>
+          <NotificationEngine />
+        </div>
+
         <div className={Breadcrumbscon.breadcrumbscon}>
           <h6 style={{ fontWeight: "bold" }}>Checkout Page</h6>
 
