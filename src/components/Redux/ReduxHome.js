@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addToCart } from "../actions/cartActions";
+import { addNoteToCart } from "../actions/cartActions";
 import Reduxhome_box from "./ReduxHome.module.css";
 import Reduxhome_headtext from "./ReduxHome.module.css";
 import Reduxhome_card from "./ReduxHome.module.css";
@@ -21,6 +22,7 @@ const showToastMessage = () => {
 class ReduxHome extends Component {
   handleClick = (id) => {
     this.props.addToCart(id);
+    this.props.addNoteToCart(id);
   };
 
   render() {
@@ -82,6 +84,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     addToCart: (id) => {
       dispatch(addToCart(id));
+    },
+    addNoteToCart: (id) => {
+      dispatch(addNoteToCart(id));
     },
   };
 };

@@ -5,7 +5,7 @@ export const Notestyles = {
     bottom: "400px",
     right: "50px",
     // Size
-    width: "350px",
+    width: "1350px",
     height: "230px",
     maxWidth: "calc(100% - 48px)",
     maxHeight: "calc(100% - 48px)",
