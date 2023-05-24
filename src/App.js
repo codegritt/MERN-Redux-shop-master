@@ -19,42 +19,51 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SupportEngine from "./components/Chatbot/SupportEngine";
 import CheckoutPage from "./components/Redux/CheckoutPage";
+import Store from "./components/Redux2/pages/Store";
+import Success from "./components/Redux2/pages/Success";
+import Cancel from "./components/Redux2/pages/Cancel";
+import CartProvider from "./components/Redux2/CartContext";
 
 export const App = () => {
   return (
     <>
-      <BrowserRouter>
-        <Appheader />
-        <div className="App">
-          <ToastContainer
-            theme="colored"
-            position="top-center"
-          ></ToastContainer>
+      <CartProvider>
+        <BrowserRouter>
+          <Appheader />
+          <div className="App">
+            <ToastContainer
+              theme="colored"
+              position="top-center"
+            ></ToastContainer>
 
-          <div className={AppHome.appHome}>
-            <Header1 />
+            <div className={AppHome.appHome}>
+              <Header1 />
 
-            <Header2 />
-            <HamburgerMenu />
-            <SupportEngine />
+              <Header2 />
+              <HamburgerMenu />
+              <SupportEngine />
+            </div>
+
+            {/* <Navbar /> */}
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/login" element={<Login />}></Route>
+              <Route path="/register" element={<Register />}></Route>
+              <Route path="/reduxhome" element={<ReduxHome />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/checkout" element={<CheckoutPage />} />
+              <Route exact path="/home2" element={<ShowBookList />} />
+              <Route path="/create-book" element={<CreateBook />} />
+              <Route path="/edit-book/:id" element={<UpdateBookInfo />} />
+              <Route path="/show-book/:id" element={<ShowBookDetails />} />
+              <Route path="/snapfeed" element={<SnapFeed />} />
+              <Route path="/store" element={<Store />} />
+              <Route path="/success" element={<Success />} />
+              <Route path="/cancel" element={<Cancel />} />
+            </Routes>
           </div>
-
-          {/* <Navbar /> */}
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/login" element={<Login />}></Route>
-            <Route path="/register" element={<Register />}></Route>
-            <Route path="/reduxhome" element={<ReduxHome />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/checkout" element={<CheckoutPage />} />
-            <Route exact path="/home2" element={<ShowBookList />} />
-            <Route path="/create-book" element={<CreateBook />} />
-            <Route path="/edit-book/:id" element={<UpdateBookInfo />} />
-            <Route path="/show-book/:id" element={<ShowBookDetails />} />
-            <Route path="/snapfeed" element={<SnapFeed />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
+        </BrowserRouter>
+      </CartProvider>
     </>
   );
 };
