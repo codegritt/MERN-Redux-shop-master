@@ -2,12 +2,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import "./ExpansionPanel.css";
-import Footer__body from "../Home.module.css";
-import Footer1 from "../Footer1";
-import Footer4 from "../Footer4";
-import Footer2 from "../Footer2";
-import Footer3 from "../Footer3";
-
 function ExpansionPanel() {
   return (
     <div>
