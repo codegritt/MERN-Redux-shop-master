@@ -1,6 +1,5 @@
 import React, { useState, useContext } from "react";
 import { Button, Modal } from "antd";
-import { Navbar } from "react-bootstrap";
 import { CartContext } from "../CartContext";
 import CartProduct from "./CartProduct";
 
@@ -71,6 +70,30 @@ function NavbarComp() {
           <h1>There are no items in your cart!</h1>
         )}
       </Modal>
+
+      <div>
+        <h1>Shopping Cart</h1>
+        {productsCount > 0 ? (
+          <>
+            <p>Items in your cart:</p>
+            {cart.items.map((currentProduct, idx) => (
+              <CartProduct
+                key={idx}
+                id={currentProduct.id}
+                quantity={currentProduct.quantity}
+              ></CartProduct>
+            ))}
+
+            <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
+
+            <button variant="success" onClick={checkout}>
+              Purchase items!
+            </button>
+          </>
+        ) : (
+          <h1>There are no items in your cart!</h1>
+        )}
+      </div>
     </>
   );
 }

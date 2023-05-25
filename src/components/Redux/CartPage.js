@@ -36,6 +36,7 @@ class CartPage extends Component {
         <div className="checkout">
           <Link to="/checkout">
             <button
+              class="btn btn-primary"
               style={{
                 backgroundColor: "#c6003d",
                 position: "relative",
