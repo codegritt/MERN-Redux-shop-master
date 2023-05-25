@@ -4,6 +4,9 @@ import Item3 from "../../images/item3.jpg";
 import Item4 from "../../images/item4.jpg";
 import Item5 from "../../images/item5.jpg";
 import Item6 from "../../images/item6.jpg";
+import Item7 from "../../images/item7.jpg";
+import Item8 from "../../images/item8.jpg";
+import Item9 from "../../images/item9.jpg";
 import {
   ADD_TO_CART,
   REMOVE_ITEM,
@@ -55,6 +58,27 @@ const initState = {
       desc: "The one and only Kanye's best choice!",
       price: 90,
       img: Item6,
+    },
+    {
+      id: "price_1NBFs3SB5pYQ7COX2suTMIZr",
+      title: "Coffee",
+      desc: "The one and only best coffe in the world!",
+      price: 4.99,
+      img: Item7,
+    },
+    {
+      id: "price_1NBFtCSB5pYQ7COXVbBSGbJn",
+      title: "Sunglasses",
+      desc: "Makes you look like 007!",
+      price: 9.99,
+      img: Item8,
+    },
+    {
+      id: "price_1NBFu3SB5pYQ7COXuup72aKT",
+      title: "Camera",
+      desc: "You are the next Roger Deakins!",
+      price: 39.99,
+      img: Item9,
     },
   ],
   addedItems: [],
@@ -146,3 +170,18 @@ const cartReducer = (state = initState, action) => {
 };
 
 export default cartReducer;
+
+function getcartReducerData(id) {
+  let cartReducerData = initState.find(
+    (cartReducerproduct) => cartReducerproduct.id === id
+  );
+
+  if (cartReducerData === undefined) {
+    console.log("Product data does not exist for ID: " + id);
+    return undefined;
+  }
+
+  return cartReducerData;
+}
+
+export { initState, getcartReducerData };
