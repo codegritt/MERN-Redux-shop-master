@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
-import { likePost, postComment } from "../../api/FirestoreAPI.js";
-import { getCurrentTimeStamp } from "../../Helpers/useMoment.js";
+import { likePost, postComment } from "../../api/FirestoreAPI.jsx";
+import { getCurrentTimeStamp } from "../../Helpers/useMoment.jsx";
 
 import { AiOutlineComment } from "react-icons/ai";
 import Like_container from "./LikeButton.module.css";

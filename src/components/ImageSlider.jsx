@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./ImageSlider.css";
 import { Slide } from "react-slideshow-image";
 import BarcodeComp from "./BarcodeComp";
-import FeedHeaderOption from "../components/FeedHeaderOption";
+import FeedHeaderOption from "./FeedHeaderOption";
 import Feed__header from "./FeedHeaderOption.module.css";
 
 class ImageSlider extends Component {
