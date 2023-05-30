@@ -23,6 +23,8 @@ import Store from "./components/Redux2/pages/Store";
 import Success from "./components/Redux2/pages/Success";
 import Cancel from "./components/Redux2/pages/Cancel";
 import CartProvider from "./components/Redux2/CartContext";
+import Loginbase from "./Pages/Loginbase";
+import Registerbase from "./Pages/Registerbase";
 
 export const App = () => {
   return (
@@ -60,6 +62,8 @@ export const App = () => {
               <Route path="/store" element={<Store />} />
               <Route path="/success" element={<Success />} />
               <Route path="/cancel" element={<Cancel />} />
+              <Route path="/loginbase" element={<Loginbase/>} />
+              <Route path="/registerbase" element={<Registerbase/>} />
             </Routes>
           </div>
         </BrowserRouter>

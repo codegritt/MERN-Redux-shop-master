@@ -8,7 +8,7 @@ const Appheader = () => {
   const usenavigate = useNavigate();
   const location = useLocation();
   useEffect(() => {
-    if (location.pathname === "/login" || location.pathname === "/register") {
+    if (location.pathname === "/registerbase" || location.pathname === "/register") {
       showmenuupdateupdate(false);
     } else {
       showmenuupdateupdate(true);
