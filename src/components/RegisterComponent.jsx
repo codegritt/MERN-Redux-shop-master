@@ -16,6 +16,8 @@ import Mtermsandcond__ from "./RegisterComponent.module.css";
 import MLogin__btn from "./RegisterComponent.module.css";
 import MLogin_label from "./RegisterComponent.module.css";
 import Mspan__btn from "./RegisterComponent.module.css";
+import MLogin__btnn from "./RegisterComponent.module.css";
+import { Link } from "react-router-dom";
 
 export default function RegisterComponent() {
   let navigate = useNavigate();
@@ -35,7 +37,7 @@ export default function RegisterComponent() {
       localStorage.setItem("userEmail", res.user.email);
     } catch (err) {
       console.log(err);
-      toast.error("Cannot Create your Account");
+      // toast.error("Cannot Create your Account");
     }
   };
 
@@ -180,10 +182,17 @@ export default function RegisterComponent() {
             />
             </div>
             {/* <div className="card-footer"> */}
-            <span className={Mspan__btn.Mspan__btnn}>New User?</span>
+            
             <button  onClick={register} type="submit" className={MLogin__btn.Mlogin__btnn}>
               Register
             </button>{" "}
+            <span className={Mspan__btn.Mspan__btnn}>Already a user?</span>
+            <Link to={"/login"}>
+            
+            <button className={MLogin__btnn.Mlogin__btnnn}>
+              Login
+            </button>{" "}
+            </Link>
             {/* <Link
                 className="btn btn-success"
                 to={"/register"}
