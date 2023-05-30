@@ -18,6 +18,7 @@ import MLogin__span from "./Login.module.css";
 import MLogin_label from "./Login.module.css";
 import MLogin_input from "./Login.module.css";
 import MRegLogin__btn from "./Login.module.css";
+import MspanLogin__btn from "./Login.module.css";
 import "./Login.css";
 
 const Login = () => {
@@ -192,6 +193,7 @@ const Login = () => {
             <button type="submit" className={MLogin__btn.Mlogin__btnn}>
               Login
             </button>{" "}
+            <span className={MspanLogin__btn.Mspanlogin__btnn} >New user?</span>
             <Link  to={"/registerbase"}>
             <button type="submit" className={MRegLogin__btn.MReglogin__btnn}>
               Register
