@@ -29,7 +29,7 @@ export default function RegisterComponent() {
         name: credentails.name,
         email: credentails.email,
         imageLink:
-          "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+          "https://i1.sndcdn.com/avatars-rX0omUAsYYlCSrCM-ZLRqkw-t500x500.jpg",
       });
       navigate("/login");
       localStorage.setItem("userEmail", res.user.email);
