@@ -23,6 +23,8 @@ const initState = {
       desc: "Exquisite suede sneakers capable of increasing your game Men's Running Shoe MINIMALIST AND LIGHTWEIGHT. The Nike Revolution 5 cushions your stride with soft foam to keep you running in comfort. Lightweight knit material wraps your foot in breathable support, while a minimalist design fits in just about anywhere your day takes you. Breathable Support Lightweight knit textile wraps your foot in breathable comfort",
       price: 110,
       img: Item1,
+      reviews:50,
+      stars:4.4
     },
     {
       id: 2,
@@ -30,6 +32,8 @@ const initState = {
       desc: "Rock these sporty adidas sneakers to up your game Flexibility A foam midsole delivers a softer ride than the Revolution 5. The outsole has a computer-generated design that creates a natural piston effect as you run, providing more cushioning and flexibility. They combine for durable traction. Intuitive Touch Touch points at the heel and tongue create a natural feel as you take the shoes on and off",
       price: 80,
       img: Item2,
+      reviews:30,
+      stars:3.4
     },
     {
       id: 3,
@@ -37,6 +41,8 @@ const initState = {
       desc: "If you are willing to go full classic, Vans are your mate Here's to new beginnings between you and the pavement. Lace up the 100% recycled laces and set the pace at the start of your running journey with the plush feel of the Nike Revolution 6 Next Nature. We know comfort is key to a successful run, so we made sure your steps are cushioned and flexible for a soft ride",
       price: 120,
       img: Item3,
+      reviews:20,
+      stars:2.4
     },
     {
       id: 4,
@@ -44,6 +50,8 @@ const initState = {
       desc: "This item imitates Balanciaga Flex RN 2019 makes every run comfortable as it expands and contracts along with your foot. Dual-density foam gives you cushioned comfort for pounding out the miles, while grooves in the outsole provide flexibility from heel to toe.-- Stretch knit in the upper expands and contracts with your foot.-Dual-density foam",
       price: 260,
       img: Item4,
+      reviews:80,
+      stars:4.5
     },
     {
       id: 5,
@@ -51,6 +59,8 @@ const initState = {
       desc: "This item brings class and elegance together Fast enough for your everyday runs, light enough to keep you in the flow. The Nike Air Winflo 9 has a secure fit that keeps your foot in place as the miles go by. We added plenty of foam through the midsole, giving you extra pep to every step. Lace up, lock in, win your goals",
       price: 160,
       img: Item5,
+      reviews:100,
+      stars:5
     },
     {
       id: 6,
@@ -58,6 +68,8 @@ const initState = {
       desc: "The one and only Kanye's best choice Here's to new beginnings between you and the pavement. Lace up the 100% recycled laces and set the pace at the start of your running journey with the plush feel of the Nike Revolution 6 Next Nature. We know comfort is key to a successful run, so we made sure your steps are cushioned and flexible for a soft ride",
       price: 90,
       img: Item6,
+      reviews:564,
+      stars:3
     },
     {
       id: "price_1NBFs3SB5pYQ7COX2suTMIZr",
@@ -65,6 +77,8 @@ const initState = {
       desc: "The one and only best coffe in the world Here's to new beginnings between you and the pavement. Lace up the 100% recycled laces and set the pace at the start of your running journey with the plush feel of the Nike Revolution 6 Next Nature. We know comfort is key to a successful run, so we made sure your steps are cushioned and flexible for a soft ride",
       price: 4.99,
       img: Item7,
+      reviews:57,
+      stars:1.4
     },
     {
       id: "price_1NBFtCSB5pYQ7COXVbBSGbJn",
@@ -72,6 +86,8 @@ const initState = {
       desc: "Makes you look like 007 Here's to new beginnings between you and the pavement. Lace up the 100% recycled laces and set the pace at the start of your running journey with the plush feel of the Nike Revolution 6 Next Nature. We know comfort is key to a successful run, so we made sure your steps are cushioned and flexible for a soft ride",
       price: 9.99,
       img: Item8,
+      reviews:10,
+      stars:3.5
     },
     {
       id: "price_1NBFu3SB5pYQ7COXuup72aKT",
@@ -79,6 +95,8 @@ const initState = {
       desc: "You are the next Roger Deakins Here's to new beginnings between you and the pavement. Lace up the 100% recycled laces and set the pace at the start of your running journey with the plush feel of the Nike Revolution 6 Next Nature. We know comfort is key to a successful run, so we made sure your steps are cushioned and flexible for a soft ride",
       price: 39.99,
       img: Item9,
+      reviews:40,
+      stars:3.4
     },
   ],
   addedItems: [],

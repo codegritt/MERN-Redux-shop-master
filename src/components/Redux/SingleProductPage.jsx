@@ -15,8 +15,9 @@ import ProdNotetitle from "./SingleProductPage.module.css";
 import ProdNotedesc from "./SingleProductPage.module.css";
 import ProdNoteprize from "./SingleProductPage.module.css";
 import ProdNotequan from "./SingleProductPage.module.css";
-import Redux_plusicon from "./ReduxHome.module.css";
 import { ToastContainer, toast } from "react-toastify";
+import Rating from "./Rating";
+
 
 const showToastMessage = () => {
     toast.success("Item added !", {
@@ -25,6 +26,7 @@ const showToastMessage = () => {
   };
 
 export class SingleProductPage extends Component {
+
   //to remove the item completely
   handleRemove = (id) => {
     this.props.removeItem(id);
@@ -56,7 +58,10 @@ export class SingleProductPage extends Component {
 
             <div className={Product_desc.product_desc} >
               <span className={ProdNotetitle.prodnotetitle}>{item.title}</span>
+             
+              <Rating />
               <p>
+            
                 <b className={ProdNoteprize.prodnoteprize}>Price: {item.price}$</b>
               </p>
               <p className={ProdNotedesc.prodnotedesc}>{item.desc}</p>
