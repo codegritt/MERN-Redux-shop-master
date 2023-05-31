@@ -40,7 +40,7 @@ const initState = {
     },
     {
       id: 4,
-      title: "Yeezy's White",
+      title: "Yeezy's White sneakers",
       desc: "This item imitates Balanciaga Flex RN 2019 makes every run comfortable as it expands and contracts along with your foot. Dual-density foam gives you cushioned comfort for pounding out the miles, while grooves in the outsole provide flexibility from heel to toe.-- Stretch knit in the upper expands and contracts with your foot.-Dual-density foam",
       price: 260,
       img: Item4,
