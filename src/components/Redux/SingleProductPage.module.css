@@ -1,0 +1,51 @@
+.product_main {
+  position: relative;
+  top: 50px;
+  padding: 30px;
+}
+
+.productitemimgimg {
+  height: 420px;
+}
+
+.product_desc {
+  position: relative;
+  left: 270px;
+  height: 450px;
+  width: 33%;
+  /* background-color: red; */
+  padding: 30px;
+}
+
+.prod_image {
+  width: 33%;
+  height: 450px;
+  position: relative;
+  left: 200px;
+  /* background-color: red; */
+}
+
+.prodnotetitle {
+  font-size: 20px;
+  color: gray;
+  font-weight: bold;
+}
+
+.prodnotedesc {
+  font-size: 14px;
+  color: gray;
+  padding: 20px;
+  padding-left: 0;
+}
+
+.prodnoteprize {
+  font-size: 15px;
+  color: gray;
+  font-weight: bold;
+}
+
+.prodnotequan {
+  font-size: 14px;
+  color: gray;
+  font-weight: bold;
+}

@@ -25,6 +25,7 @@ import Cancel from "./components/Redux2/pages/Cancel";
 import CartProvider from "./components/Redux2/CartContext";
 import Loginbase from "./Pages/Loginbase";
 import Registerbase from "./Pages/Registerbase";
+import SingleProductPage from "./components/Redux/SingleProductPage";
 
 export const App = () => {
   return (
@@ -64,6 +65,7 @@ export const App = () => {
               <Route path="/cancel" element={<Cancel />} />
               <Route path="/loginbase" element={<Loginbase/>} />
               <Route path="/registerbase" element={<Registerbase/>} />
+              <Route path="/singleproductpage" element={<SingleProductPage/>} />
             </Routes>
           </div>
         </BrowserRouter>

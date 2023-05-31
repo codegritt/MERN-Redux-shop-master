@@ -7,6 +7,10 @@ import {
   REMOVE_ITEM,
   SUB_QUANTITY,
   ADD_QUANTITY,
+  PRODUCT_ADD_TO_CART,
+  PRODUCT_REMOVE_ITEM,
+  PRODUCT_SUB_QUANTITY,
+  PRODUCT_ADD_QUANTITY
 } from "./action-types/cart-actions";
 import { useState, createContext } from "react";
 import { getcartReducerData } from "../reducers/cartReducer";
@@ -183,6 +187,40 @@ export const subtractNoteQuantity = (id) => {
 export const addNoteQuantity = (id) => {
   return {
     type: NOTE_ADD_QUANTITY,
+    id,
+  };
+};
+
+
+
+//add Productcart action
+export const addProductToCart = (id) => {
+  return {
+    type: PRODUCT_ADD_TO_CART,
+    id,
+  };
+};
+
+//remove Productitem action
+export const removeProductItem = (id) => {
+  return {
+    type: PRODUCT_REMOVE_ITEM,
+    id,
+  };
+};
+
+//subtract qt action
+export const subtractProductQuantity = (id) => {
+  return {
+    type: PRODUCT_SUB_QUANTITY,
+    id,
+  };
+};
+
+//add Noteqt action
+export const addProductQuantity = (id) => {
+  return {
+    type: PRODUCT_ADD_QUANTITY,
     id,
   };
 };

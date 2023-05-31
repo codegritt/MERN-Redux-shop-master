@@ -5,7 +5,7 @@ import "./NotificationWindow.css";
 
 const NotificationWindow = (props) => {
   return (
-    <div
+    <div 
       className="notetransition-5"
       style={{
         ...Notestyles.NotesupportWindow,
