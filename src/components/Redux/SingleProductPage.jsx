@@ -157,7 +157,7 @@ export class SingleProductPage extends Component {
         style={{
           padding: "20px",
           marginLeft: "20px",
-          fontSize: "12px",
+          fontSize: "20px",
           textAlign: "center",
         }}
       >
