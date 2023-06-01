@@ -10,10 +10,11 @@ const Rating = () => {
   
 
       <div className="row">
-        <div className="col text-center">
+        <div style={{display:"flex",color:"gray"}} className="col text-center">
         
           <StarComp rating={rating} onRating={(rate) => setRating(rate)} />
-          {/* <p>Rating - {rating}</p> */}
+         
+          <p>({rating})</p>
           {/* <StarComp rating={rating2} onRating={(rate) => setRating2(rate)} />
           <p>Rating - {rating2}</p> */}
         </div>

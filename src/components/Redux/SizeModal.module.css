@@ -1,0 +1,12 @@
+.sizemodall {
+  font-size: 13px;
+  font-weight: bold;
+  color: lightblue;
+  position: relative;
+  bottom: 97px;
+  left: 100px;
+}
+
+.sizemodallchart {
+  width: 500px;
+}
