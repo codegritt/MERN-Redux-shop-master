@@ -1,7 +1,6 @@
 import { Modal } from "antd";
 import { useState } from "react";
 import SizeModall from "./SizeModal.module.css";
-import SizeModallchart from "./SizeModal.module.css";
 
 const SizeModal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,8 +19,7 @@ const SizeModal = () => {
         Size Chart
       </p>
       <Modal
-        bodyStyle={{ height: 250 }}
-        className={SizeModallchart.sizemodallchart}
+        bodyStyle={{ height: 280 }}
         title="Size Chart (Inch)"
         open={isModalOpen}
         onOk={handleOk}

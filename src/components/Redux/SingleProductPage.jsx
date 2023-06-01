@@ -22,8 +22,9 @@ import Footer1 from "../Footer1";
 import Footer2 from "../Footer2";
 import Footer3 from "../Footer3";
 import Footer4 from "../Footer4";
-import FooterImage from "../FooterImage";
 import SizeModal from "./SizeModal";
+import SizeModallchart from "./SingleProductPage.module.css";
+import SingleProductDetails from "./SingleProductDetails";
 
 const showToastMessage = () => {
   toast.success("Item added !", {
@@ -49,173 +50,181 @@ export class SingleProductPage extends Component {
     let addedItems = this.props.items.length ? (
       this.props.items.map((item) => {
         return (
-          <li className="collection-item avatar" key={item.id}>
-            <div className={Prod_image.prod_image}>
-              <img
-                style={{ width: "420px" }}
-                className={ProductItemimgimg.productitemimgimg}
-                src={item.img}
-                alt={item.img}
-              />
-            </div>
-
-            <div className={Product_desc.product_desc}>
-              <span className={ProdNotetitle.prodnotetitle}>{item.title}</span>
-
-              <h6 style={{ position: "absolute", left: "0px", top: "25px" }}>
-                <Rating />
-              </h6>
-              <p>
-                <b className={ProdNoteprize.prodnoteprize}>
-                  Price: {item.price}$
-                </b>
-              </p>
-              <p className={ProdNotedesc.prodnotedesc}>{item.desc}</p>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <div>
-                  <img
-                    style={{ width: "50px", height: "50px" }}
-                    src="https://i.pinimg.com/736x/09/51/c2/0951c247dcd42d66662a622ab5451f19.jpg"
-                    alt=""
-                  />
-                  <p style={{ color: "gray", fontSize: "10px" }}>
-                    COD available
-                  </p>
-                </div>
-                <div>
-                  <img
-                    style={{ width: "50px", height: "50px" }}
-                    src="https://previews.123rf.com/images/arcady31/arcady311510/arcady31151000035/46535025-30-days-money-back-guarantee-icon.jpg"
-                    alt=""
-                  />
-                  <p style={{ color: "gray", fontSize: "10px" }}>
-                    30 days replcament
-                  </p>
-                </div>
-
-                <div>
-                  <img
-                    style={{ width: "50px", height: "50px" }}
-                    src="https://cdn3.vectorstock.com/i/1000x1000/33/92/successful-delivery-icon-outline-style-vector-22283392.jpg"
-                    alt=""
-                  />
-                  <p style={{ color: "gray", fontSize: "10px" }}>
-                    Snap delivered
-                  </p>
-                </div>
-                <div>
-                  <img
-                    style={{ width: "50px", height: "50px" }}
-                    src="https://previews.123rf.com/images/arcady31/arcady311503/arcady31150300014/37426795-satisfaction-guarantee-icon.jpg"
-                    alt=""
-                  />
-                  <p style={{ color: "gray", fontSize: "10px" }}>
-                    1year guarantee
-                  </p>
-                </div>
-              </div>
-              <p>
-                <b className={ProdNotequan.prodnotequan}>
-                  Quantity: {item.quantity}
-                </b>
-              </p>
-              <div className="add-remove">
-                <Link to="/cart">
-                  <i
-                    className="material-icons"
-                    onClick={() => {
-                      this.handleProductAddQuantity(item.id);
-                    }}
-                  >
-                    arrow_drop_up
-                  </i>
-                </Link>
-                <Link to="/cart">
-                  <i
-                    className="material-icons"
-                    onClick={() => {
-                      this.handleProductSubtractQuantity(item.id);
-                    }}
-                  >
-                    arrow_drop_down
-                  </i>
-                </Link>
+          <>
+            {" "}
+            <li className="collection-item avatar" key={item.id}>
+              <div className={Prod_image.prod_image}>
+                <img
+                  style={{ width: "420px" }}
+                  className={ProductItemimgimg.productitemimgimg}
+                  src={item.img}
+                  alt={item.img}
+                />
               </div>
 
-              <div style={{ display: "flex" }}>
-                <Link to="/cart">
+              <div className={Product_desc.product_desc}>
+                <span className={ProdNotetitle.prodnotetitle}>
+                  {item.title}
+                </span>
+
+                <h6 style={{ position: "absolute", left: "0px", top: "25px" }}>
+                  <Rating />
+                </h6>
+                <p>
+                  <b className={ProdNoteprize.prodnoteprize}>
+                    Price: {item.price}$
+                  </b>
+                </p>
+                <p className={ProdNotedesc.prodnotedesc}>{item.desc}</p>
+
+                <div
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <div>
+                    <img
+                      style={{ width: "50px", height: "50px" }}
+                      src="https://i.pinimg.com/736x/09/51/c2/0951c247dcd42d66662a622ab5451f19.jpg"
+                      alt=""
+                    />
+                    <p style={{ color: "gray", fontSize: "10px" }}>
+                      COD available
+                    </p>
+                  </div>
+                  <div>
+                    <img
+                      style={{ width: "50px", height: "50px" }}
+                      src="https://previews.123rf.com/images/arcady31/arcady311510/arcady31151000035/46535025-30-days-money-back-guarantee-icon.jpg"
+                      alt=""
+                    />
+                    <p style={{ color: "gray", fontSize: "10px" }}>
+                      30 days replcament
+                    </p>
+                  </div>
+
+                  <div>
+                    <img
+                      style={{ width: "50px", height: "50px" }}
+                      src="https://cdn3.vectorstock.com/i/1000x1000/33/92/successful-delivery-icon-outline-style-vector-22283392.jpg"
+                      alt=""
+                    />
+                    <p style={{ color: "gray", fontSize: "10px" }}>
+                      Snap delivered
+                    </p>
+                  </div>
+                  <div>
+                    <img
+                      style={{ width: "50px", height: "50px" }}
+                      src="https://previews.123rf.com/images/arcady31/arcady311503/arcady31150300014/37426795-satisfaction-guarantee-icon.jpg"
+                      alt=""
+                    />
+                    <p style={{ color: "gray", fontSize: "10px" }}>
+                      1year guarantee
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  <b className={ProdNotequan.prodnotequan}>
+                    Quantity: {item.quantity}
+                  </b>
+                </p>
+                <div className="add-remove">
+                  <Link to="/cart">
+                    <i
+                      className="material-icons"
+                      onClick={() => {
+                        this.handleProductAddQuantity(item.id);
+                      }}
+                    >
+                      arrow_drop_up
+                    </i>
+                  </Link>
+                  <Link to="/cart">
+                    <i
+                      className="material-icons"
+                      onClick={() => {
+                        this.handleProductSubtractQuantity(item.id);
+                      }}
+                    >
+                      arrow_drop_down
+                    </i>
+                  </Link>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  <Link to="/cart">
+                    <button
+                      style={{
+                        position: "relative",
+                        bottom: "35px",
+                        height: "30px",
+                        fontSize: "12px",
+                        backgroundColor: "#3f3f3f",
+                      }}
+                      onClick={showToastMessage}
+                      className="waves-effect waves-light btn remove"
+                    >
+                      ADD TO CART
+                    </button>
+                    <ToastContainer />
+                  </Link>
+
+                  <button
+                    style={{
+                      fontSize: "12px",
+                      height: "20px",
+                      paddingBottom: "30px",
+                      left: "30px",
+                      position: "relative",
+                      bottom: "33px",
+                    }}
+                    className="waves-effect waves-light btn pink remove"
+                    onClick={() => {
+                      this.handleRemove(item.id);
+                    }}
+                  >
+                    Remove
+                  </button>
+                </div>
+                <SizeModal />
+                <div
+                  style={{
+                    display: "flex",
+                    position: "relative",
+                    bottom: "30px",
+                  }}
+                >
+                  <span style={{ color: "gray" }}>Delivery</span>
+                  <input
+                    style={{
+                      border: "1px solid lightgray",
+                      height: "25px",
+                      fontSize: "14px",
+                      position: "relative",
+                      top: "0px",
+                      marginLeft: "30px",
+                      paddingLeft: "10px",
+                      width: "20px",
+                      borderRadius: "3px",
+                    }}
+                    className="form-control"
+                    placeholder="Enter Pincode"
+                  />
                   <button
                     style={{
                       position: "relative",
-                      bottom: "35px",
-                      height: "30px",
-                      fontSize: "12px",
+                      height: "25px",
+                      fontSize: "11px",
                       backgroundColor: "#3f3f3f",
+                      paddingBottom: "27px",
                     }}
-                    onClick={showToastMessage}
                     className="waves-effect waves-light btn remove"
                   >
-                    ADD TO CART
+                    CHECK
                   </button>
-                  <ToastContainer />
-                </Link>
-
-                <button
-                  style={{
-                    fontSize: "12px",
-                    height: "20px",
-                    paddingBottom: "30px",
-                    left: "30px",
-                    position: "relative",
-                    bottom: "33px",
-                  }}
-                  className="waves-effect waves-light btn pink remove"
-                  onClick={() => {
-                    this.handleRemove(item.id);
-                  }}
-                >
-                  Remove
-                </button>
+                </div>
               </div>
-              <SizeModal />
-              <div
-                style={{
-                  display: "flex",
-                  position: "relative",
-                  bottom: "30px",
-                }}
-              >
-                <span style={{ color: "gray" }}>Delivery</span>
-                <input
-                  style={{
-                    border: "1px solid lightgray",
-                    height: "25px",
-                    fontSize: "14px",
-                    position: "relative",
-                    top: "0px",
-                    marginLeft: "30px",
-                    paddingLeft: "10px",
-                    width: "20px",
-                    borderRadius: "3px",
-                  }}
-                  className="form-control"
-                  placeholder="Enter Pincode"
-                />
-                <button
-                  style={{
-                    position: "relative",
-                    height: "25px",
-                    fontSize: "11px",
-                    backgroundColor: "#3f3f3f",
-                    paddingBottom: "27px",
-                  }}
-                  className="waves-effect waves-light btn remove"
-                >
-                  CHECK
-                </button>
-              </div>
-            </div>
-          </li>
+            </li>
+          </>
         );
       })
     ) : (
@@ -230,9 +239,9 @@ export class SingleProductPage extends Component {
         Nothing to show!
       </p>
     );
+
     return (
       <>
-        {/* <div className={Product_main.product_main}> */}
         <ul
           style={{
             width: "105%",
@@ -244,13 +253,23 @@ export class SingleProductPage extends Component {
         >
           {addedItems}
         </ul>
-        {/* </div> */}
+
         <div style={{ position: "relative", top: "1000px" }}>
-          <div className={Footer__body.footer__body}>
-            <Footer1 />
-            <Footer4 />
-            <Footer2 />
-            <Footer3 />
+          <div
+            style={{ height: "400px" }}
+            className={SizeModallchart.sizemodallchart}
+          >
+            <div style={{ position: "relative", bottom: "400px" }}>
+              <SingleProductDetails />
+            </div>
+          </div>
+          <div style={{ position: "relative", top: "500px" }}>
+            <div className={Footer__body.footer__body}>
+              <Footer1 />
+              <Footer4 />
+              <Footer2 />
+              <Footer3 />
+            </div>
           </div>
         </div>
       </>
