@@ -255,14 +255,16 @@ export class SingleProductPage extends Component {
         </ul>
 
         <div style={{ position: "relative", top: "1000px" }}>
-          <div
+          {/* <div
             style={{ height: "1200px" }}
             className={SizeModallchart.sizemodallchart}
+          > */}
+          <div
+            style={{ position: "relative", bottom: "900px", padding: "50px" }}
           >
-            {/* <div style={{ position: "relative", bottom: "400px" }}> */}
             <SingleProductDetails />
-            {/* </div> */}
           </div>
+          {/* </div> */}
           <div style={{ position: "relative", top: "1000px" }}>
             <div className={Footer__body.footer__body}>
               <Footer1 />

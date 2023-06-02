@@ -13,8 +13,10 @@ import Specbodyspecificationst from "./SingleProductDetails.module.css";
 import Specbodyspecificationstd from "./SingleProductDetails.module.css";
 import Specbodykeyfeatures from "./SingleProductDetails.module.css";
 import Specbodykeyfeaturesli from "./SingleProductDetails.module.css";
-import { Collapse } from "antd";
-const { Panel } = Collapse;
+import Ratingtext from "./SingleProductDetails.module.css";
+import Ratingtextt from "./SingleProductDetails.module.css";
+import Ratingtexttt from "./SingleProductDetails.module.css";
+import Rating from "./Rating";
 
 export class SingleProductDetails extends Component {
   render() {
@@ -23,371 +25,433 @@ export class SingleProductDetails extends Component {
         return (
           <>
             {/* <div className={Product_descqq.product_descqq}> */}
-            <ul
+            {/* <ul
               style={{ position: "relative", bottom: "400px" }}
               className="collection-item avatar"
               key={item.id}
+            > */}
+
+            <span
+              style={{
+                color: "gray",
+                fontSize: "20px",
+              }}
             >
-              <Collapse defaultActiveKey={["1"]} ghost>
-                <Panel
-                  style={{ color: "gray", fontSize: "20px" }}
-                  header="Highlights"
-                  key="1"
+              Highlights
+            </span>
+            <hr></hr>
+            <div className={Specbodykeyfeatures.specbodykeyfeatures}>
+              <ul
+                style={{ margin: "20px 0", clear: "both" }}
+                class="dtls-list clear"
+              >
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
                 >
-                  <div className={Specbodykeyfeatures.specbodykeyfeatures}>
-                    <ul
-                      style={{ margin: "20px 0", clear: "both" }}
-                      class="dtls-list clear"
-                    >
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">Veirdo</span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">Color: Green</span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">Fabric: Cotton</span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">Fit: Regular Fit</span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">Neck Shape: Round</span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">Pattern: Solid</span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">
-                          Sleeves Length: Half Sleeves
-                        </span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">Pack: Pack of 1</span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">Hemline: Straight</span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">
-                          Pattern or Print Type: Solid
-                        </span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">Shop By Occasion: Casual</span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">Season: Summer</span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">
-                          Pattern Coverage: All Over
-                        </span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">Product Length: Regular</span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">
-                          Number of Pocket: No Pocket
-                        </span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">Wash Care: Machine-wash</span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">Weave Type: Knitted</span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">Closure: Pullover</span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">
-                          The product may vary from the images due to various
-                          reasons like monitor setting or photographic lighting
-                          sources or handiwork &amp; craftmanship.
-                        </span>
-                      </li>
-                      <li
-                        className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
-                        class="col-xs-8 dtls-li"
-                        id="highlightSupc"
-                      >
-                        <span class="list-cicrle-cont">
-                          <span class="list-circle"></span>
-                        </span>
-                        <span class="h-content">SUPC: SDL302182620</span>
-                      </li>
-                    </ul>
-                  </div>
-                </Panel>
-                <Panel
-                  style={{ color: "gray", fontSize: "20px" }}
-                  header=" Other Specifications"
-                  key="2"
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Veirdo</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
                 >
-                  <hr></hr>
-                  <p className={ProdNotedescd.prodnotedescd}>
-                    <div
-                      className={Specbodyspecifications.specbodyspecifications}
-                    >
-                      <div style={{ lineHeight: "20px" }} class="detailssubbox">
-                        <table
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Color: Green</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Fabric: Cotton</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Fit: Regular Fit</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Neck Shape: Round</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Pattern: Solid</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Sleeves Length: Half Sleeves</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Pack: Pack of 1</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Hemline: Straight</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Pattern or Print Type: Solid</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Shop By Occasion: Casual</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Season: Summer</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Pattern Coverage: All Over</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Product Length: Regular</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Number of Pocket: No Pocket</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Wash Care: Machine-wash</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Weave Type: Knitted</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">Closure: Pullover</span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">
+                    The product may vary from the images due to various reasons
+                    like monitor setting or photographic lighting sources or
+                    handiwork &amp; craftmanship.
+                  </span>
+                </li>
+                <li
+                  className={Specbodykeyfeaturesli.specbodykeyfeaturesli}
+                  class="col-xs-8 dtls-li"
+                  id="highlightSupc"
+                >
+                  <span class="list-cicrle-cont">
+                    <span class="list-circle"></span>
+                  </span>
+                  <span class="h-content">SUPC: SDL302182620</span>
+                </li>
+              </ul>
+            </div>
+            <hr></hr>
+            <span style={{ color: "gray", fontSize: "20px" }}>
+              Other Specifications
+            </span>
+            <hr></hr>
+            <p className={ProdNotedescd.prodnotedescd}>
+              <div className={Specbodyspecifications.specbodyspecifications}>
+                <div style={{ lineHeight: "20px" }} class="detailssubbox">
+                  <table
+                    className={Specbodyspecificationst.specbodyspecificationst}
+                    style={{
+                      width: "100%",
+                      border: "0",
+                      cellspacing: "0",
+                      cellpadding: "0",
+                    }}
+                  >
+                    <tbody>
+                      <tr>
+                        <td
                           className={
-                            Specbodyspecificationst.specbodyspecificationst
+                            Specbodyspecificationstd.specbodyspecificationstd
                           }
-                          style={{
-                            width: "100%",
-                            border: "0",
-                            cellspacing: "0",
-                            cellpadding: "0",
-                          }}
                         >
-                          <tbody>
-                            <tr>
-                              <td
-                                className={
-                                  Specbodyspecificationstd.specbodyspecificationstd
-                                }
-                              >
-                                <table
+                          <table
+                            className={
+                              Specbodyspecificationst.specbodyspecificationst
+                            }
+                            style={{
+                              width: "100%",
+                              border: "0",
+                              cellspacing: "0",
+                              cellpadding: "0",
+                            }}
+                            class="product-spec"
+                          >
+                            <tbody>
+                              <tr>
+                                <th colspan="2"> Other Details</th>
+                              </tr>
+                              <tr>
+                                <td
                                   className={
-                                    Specbodyspecificationst.specbodyspecificationst
+                                    Specbodyspecificationstd.specbodyspecificationstd
                                   }
-                                  style={{
-                                    width: "100%",
-                                    border: "0",
-                                    cellspacing: "0",
-                                    cellpadding: "0",
-                                  }}
-                                  class="product-spec"
+                                  style={{ width: "20%" }}
                                 >
-                                  <tbody>
-                                    <tr>
-                                      <th colspan="2"> Other Details</th>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        className={
-                                          Specbodyspecificationstd.specbodyspecificationstd
-                                        }
-                                        style={{ width: "20%" }}
-                                      >
-                                        Country of Origin or Manufacture or
-                                        Assembly
-                                      </td>
-                                      <td>India </td>
-                                    </tr>
-                                    <tr>
-                                      <td style={{ width: "20%" }}>
-                                        Common or Generic Name of the commodity
-                                      </td>
-                                      <td>M-T Shirts </td>
-                                    </tr>
-                                    <tr>
-                                      <td style={{ width: "20%" }}>
-                                        Net Contents
-                                      </td>
-                                      <td>1 </td>
-                                    </tr>
-                                    <tr>
-                                      <td style={{ width: "20%" }}>
-                                        Manufacturer's Name &amp; Address
-                                      </td>
-                                      <td>
-                                        Veirdo Ventures,2ND F-A,ANZ INFINITY, Nr
-                                        Ranipur CHurch, Narol, Ahmedabad{" "}
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td style={{ width: "20%" }}>
-                                        Packer's Name &amp; Address
-                                      </td>
-                                      <td>
-                                        Veirdo Ventures,2ND F-A,ANZ INFINITY, Nr
-                                        Ranipur CHurch, Narol, Ahmedabad{" "}
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td style={{ width: "20%" }}>
-                                        Marketer's Name &amp; Address
-                                      </td>
-                                      <td>
-                                        Veirdo Ventures,2ND F-A,ANZ INFINITY, Nr
-                                        Ranipur CHurch, Narol, Ahmedabad{" "}
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td style={{ width: "20%" }}>
-                                        Importer's Name &amp; Address
-                                      </td>
-                                      <td>
-                                        Veirdo Ventures,2ND F-A,ANZ INFINITY, Nr
-                                        Ranipur CHurch, Narol, Ahmedabad{" "}
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
+                                  Country of Origin or Manufacture or Assembly
+                                </td>
+                                <td>India </td>
+                              </tr>
+                              <tr>
+                                <td style={{ width: "20%" }}>
+                                  Common or Generic Name of the commodity
+                                </td>
+                                <td>M-T Shirts </td>
+                              </tr>
+                              <tr>
+                                <td style={{ width: "20%" }}>Net Contents</td>
+                                <td>1 </td>
+                              </tr>
+                              <tr>
+                                <td style={{ width: "20%" }}>
+                                  Manufacturer's Name &amp; Address
+                                </td>
+                                <td>
+                                  Veirdo Ventures,2ND F-A,ANZ INFINITY, Nr
+                                  Ranipur CHurch, Narol, Ahmedabad{" "}
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style={{ width: "20%" }}>
+                                  Packer's Name &amp; Address
+                                </td>
+                                <td>
+                                  Veirdo Ventures,2ND F-A,ANZ INFINITY, Nr
+                                  Ranipur CHurch, Narol, Ahmedabad{" "}
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style={{ width: "20%" }}>
+                                  Marketer's Name &amp; Address
+                                </td>
+                                <td>
+                                  Veirdo Ventures,2ND F-A,ANZ INFINITY, Nr
+                                  Ranipur CHurch, Narol, Ahmedabad{" "}
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style={{ width: "20%" }}>
+                                  Importer's Name &amp; Address
+                                </td>
+                                <td>
+                                  Veirdo Ventures,2ND F-A,ANZ INFINITY, Nr
+                                  Ranipur CHurch, Narol, Ahmedabad{" "}
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </p>
+
+            <span style={{ color: "gray", fontSize: "20px" }}>Description</span>
+            <hr></hr>
+            <p
+              style={{
+                paddingLeft: "52px",
+                padding: "15px 35px 20px 33px",
+              }}
+              className={ProdNotedescd.prodnotedescd}
+            >
+              {item.desc}
+            </p>
+
+            <span style={{ color: "gray", fontSize: "20px" }}>
+              {" "}
+              Terms & Conditions
+            </span>
+            <hr></hr>
+            <p
+              style={{
+                paddingLeft: "52px",
+                padding: "15px 35px 20px 33px",
+              }}
+              className={ProdNotedescd.prodnotedescd}
+            >
+              The images represent actual product though color of the image and
+              product may slightly differ. Snapdeal does not select, edit,
+              modify, alter, add or supplement the information, description and
+              other specifications provided by the Seller.
+            </p>
+            <div
+              style={{
+                border: "1px solid lightgray",
+                padding: "30px",
+                paddingLeft: "0",
+              }}
+            >
+              <span style={{ color: "gray", fontSize: "20px" }}>
+                Ratings & Reviews
+              </span>
+              <div
+                style={{ display: "flex", padding: "30px", paddingLeft: "0" }}
+              >
+                <div className={Ratingtext.ratingtext}>
+                  <div className={Ratingtextt.ratingtextt}>
+                    <Rating />
+                  </div>
+                  <p
+                    style={{ color: "gray", fontSize: "17px" }}
+                    class="total-review-txt"
+                  >
+                    6037 Ratings &amp; 134 Reviews
                   </p>
-                </Panel>
-                <Panel
-                  style={{ color: "gray", fontSize: "20px" }}
-                  header="Description"
-                  key="3"
-                >
-                  <hr></hr>
+                  <p style={{ color: "lightblue", fontSize: "17px" }}>
+                    View All Reviews
+                  </p>
+                </div>
+                <div className={Ratingtext.ratingtext}>
+                  <div className={Ratingtexttt.ratingtexttt}>29%</div>
+                  <p
+                    style={{ color: "gray", fontSize: "17px" }}
+                    class="total-review-txt"
+                  >
+                    Based on 1012 Recommendations
+                  </p>
+                  <div style={{ display: "flex" }}>
+                    <p style={{ color: "gray", fontSize: "15px" }}>
+                      Would you like to recommend this item?
+                    </p>
+                    <button
+                      style={{ backgroundColor: "green" }}
+                      class="btn waves-effect waves-green"
+                    >
+                      YES
+                    </button>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <button
+                      style={{ backgroundColor: "#3f3f3f" }}
+                      class="btn waves-effect waves-grey"
+                    >
+                      NO
+                    </button>
+                  </div>
+                </div>
+                <div className={Ratingtext.ratingtext}>
                   <p
                     style={{
-                      paddingLeft: "52px",
-                      padding: "15px 35px 20px 33px",
+                      color: "gray",
+                      fontSize: "17px",
+                      position: "relative",
+                      top: "70px",
                     }}
-                    className={ProdNotedescd.prodnotedescd}
+                    class="total-review-txt"
                   >
-                    {item.desc}
+                    Have you used this product?
                   </p>
-                </Panel>
-                <Panel
-                  style={{ color: "gray", fontSize: "20px" }}
-                  header="   Terms & Conditions"
-                  key="4"
-                >
-                  <hr></hr>
-                  <p
+                  <button
                     style={{
-                      paddingLeft: "52px",
-                      padding: "15px 35px 20px 33px",
+                      fontSize: "17px",
+                      height: "20px",
+                      paddingBottom: "30px",
+                      left: "10px",
+                      position: "relative",
+                      top: "80px",
                     }}
-                    className={ProdNotedescd.prodnotedescd}
+                    className="waves-effect waves-light btn pink remove"
                   >
-                    The images represent actual product though color of the
-                    image and product may slightly differ. Snapdeal does not
-                    select, edit, modify, alter, add or supplement the
-                    information, description and other specifications provided
-                    by the Seller.
-                  </p>
-                </Panel>
-              </Collapse>
-            </ul>
+                    Review
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* </ul> */}
             {/* </div> */}
           </>
         );
@@ -408,15 +472,19 @@ export class SingleProductDetails extends Component {
 
     return (
       <>
-        <div
+        {/* <div
           style={{
             padding: "50px",
             position: "relative",
-            bottom: "40px",
+            bottom: "450px",
+            height: "1px",
+            backgroundColor: "red",
           }}
-        >
-          {addedItems}
-        </div>
+        > */}
+
+        {addedItems}
+
+        {/* </div> */}
       </>
     );
   }

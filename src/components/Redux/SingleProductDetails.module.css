@@ -1,8 +1,9 @@
 .prodnotedescd {
   font-size: 16px;
-  color: gray;
+
   padding: 20px;
   padding-left: 0;
+  box-shadow: 10px 10px 20px 10px gray;
 }
 
 .product_descqq {
@@ -48,6 +49,7 @@
   border-top: solid 1px #e5e5e5;
   margin-top: 20px;
   position: relative;
+  box-shadow: 10px 10px 20px 10px gray;
 }
 
 .specbodykeyfeaturesli {
@@ -61,4 +63,37 @@
   text-overflow: initial;
   font-size: 12px;
   color: #666666;
+  box-shadow: 10px 10px 20px 10px gray;
+}
+
+.ratingtext {
+  width: 60%;
+  padding-top: 40px;
+  border: solid 2px #e8e8e8;
+  text-align: center;
+  margin: 0;
+  float: none;
+  display: table-cell;
+  padding: 40px;
+  position: relative;
+  left: 30px;
+  box-shadow: 10px 10px 20px 10px gray;
+}
+
+.ratingtextt {
+  font-size: 20px;
+  padding-top: 2px;
+  margin-bottom: 4px;
+  color: #666;
+  position: relative;
+  left: 80px;
+}
+
+.ratingtexttt {
+  font-size: 45px;
+  padding-top: 2px;
+  margin-bottom: 4px;
+  color: #666;
+  position: relative;
+  left: 10px;
 }
