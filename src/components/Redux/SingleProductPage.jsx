@@ -23,7 +23,6 @@ import Footer2 from "../Footer2";
 import Footer3 from "../Footer3";
 import Footer4 from "../Footer4";
 import SizeModal from "./SizeModal";
-import SizeModallchart from "./SingleProductPage.module.css";
 import SingleProductDetails from "./SingleProductDetails";
 
 const showToastMessage = () => {

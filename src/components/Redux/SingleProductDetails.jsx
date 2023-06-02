@@ -17,6 +17,9 @@ import Ratingtext from "./SingleProductDetails.module.css";
 import Ratingtextt from "./SingleProductDetails.module.css";
 import Ratingtexttt from "./SingleProductDetails.module.css";
 import Rating from "./Rating";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../Redux/SingleProductDetails.css";
 
 export class SingleProductDetails extends Component {
   render() {
@@ -370,7 +373,6 @@ export class SingleProductDetails extends Component {
             </p>
             <div
               style={{
-                border: "1px solid lightgray",
                 padding: "30px",
                 paddingLeft: "0",
               }}
@@ -450,7 +452,210 @@ export class SingleProductDetails extends Component {
                 </div>
               </div>
             </div>
-
+            <p style={{ color: "gray", fontSize: "13px" }}>
+              1-10 of 134 Reviews
+            </p>
+            <hr></hr>
+            <div style={{ display: "flex" }}>
+              <span
+                style={{
+                  color: "gray",
+                  fontSize: "20px",
+                }}
+              >
+                Customer Reviews |
+              </span>
+              <FontAwesomeIcon
+                style={{
+                  color: "gray",
+                  fontSize: "13px",
+                  position: "relative",
+                  left: "30px",
+                  top: "10px",
+                }}
+                icon={faMagnifyingGlass}
+              />
+              <div>
+                <input
+                  style={{
+                    height: "30px",
+                    fontSize: "13px",
+                    position: "relative",
+                    top: "0px",
+                    right: "30px",
+                    marginLeft: "30px",
+                    paddingLeft: "40px",
+                    width: "400px",
+                    borderRadius: "3px",
+                  }}
+                  className="form-control"
+                  placeholder="Search customer reviews"
+                />
+              </div>
+            </div>
+            <div
+              style={{
+                border: "1px solid lightgray",
+                padding: "30px",
+                paddingTop: "5px",
+                marginBottom: "60px",
+              }}
+            >
+              <img
+                style={{ width: "50px", position: "relative", top: "60px" }}
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaWBWJ_C2F1wDn97QqFPTOreBip4gYhfQ3MWec_ecaRCuuJ0ghOX2fSmLVRaHmraFaPs8&usqp=CAU"
+                alt=""
+              />
+              <div className="text">
+                <div className="user-review">
+                  <div className="rating">
+                    <Rating />
+                  </div>
+                  <div style={{ position: "relative", bottom: "30px" }}>
+                    <div className="head"> {item.review1}</div>
+                    <div className="_reviewUserName" title="rama">
+                      by rama on Oct 31, 2021
+                    </div>
+                    <span className="verifiedname">
+                      <i className="filled2"></i>
+                      Verified Buyer
+                    </span>
+                    <p className="filled3">
+                      {" "}
+                      It is very nice comfortable..I liked it
+                    </p>
+                    <div className="review">
+                      0 People found this review helpful. Was this review
+                      helpful?
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr></hr>
+              <img
+                style={{ width: "50px", position: "relative", top: "60px" }}
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaWBWJ_C2F1wDn97QqFPTOreBip4gYhfQ3MWec_ecaRCuuJ0ghOX2fSmLVRaHmraFaPs8&usqp=CAU"
+                alt=""
+              />
+              <div className="text">
+                <div className="user-review">
+                  <div className="rating">
+                    <Rating />
+                  </div>
+                  <div style={{ position: "relative", bottom: "30px" }}>
+                    <div className="head"> {item.review2}</div>
+                    <div className="_reviewUserName" title="rama">
+                      by rama on Oct 31, 2021
+                    </div>
+                    <span className="verifiedname">
+                      <i className="filled2"></i>
+                      Verified Buyer
+                    </span>
+                    <p className="filled3">
+                      {" "}
+                      It is very nice comfortable..I liked it
+                    </p>
+                    <div className="review">
+                      0 People found this review helpful. Was this review
+                      helpful?
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr></hr>
+              <img
+                style={{ width: "50px", position: "relative", top: "60px" }}
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaWBWJ_C2F1wDn97QqFPTOreBip4gYhfQ3MWec_ecaRCuuJ0ghOX2fSmLVRaHmraFaPs8&usqp=CAU"
+                alt=""
+              />
+              <div className="text">
+                <div className="user-review">
+                  <div className="rating">
+                    <Rating />
+                  </div>
+                  <div style={{ position: "relative", bottom: "30px" }}>
+                    <div className="head"> {item.review3}</div>
+                    <div className="_reviewUserName" title="rama">
+                      by rama on Oct 31, 2021
+                    </div>
+                    <span className="verifiedname">
+                      <i className="filled2"></i>
+                      Verified Buyer
+                    </span>
+                    <p className="filled3">
+                      {" "}
+                      It is very nice comfortable..I liked it
+                    </p>
+                    <div className="review">
+                      0 People found this review helpful. Was this review
+                      helpful?
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr></hr>
+              <img
+                style={{ width: "50px", position: "relative", top: "60px" }}
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaWBWJ_C2F1wDn97QqFPTOreBip4gYhfQ3MWec_ecaRCuuJ0ghOX2fSmLVRaHmraFaPs8&usqp=CAU"
+                alt=""
+              />
+              <div className="text">
+                <div className="user-review">
+                  <div className="rating">
+                    <Rating />
+                  </div>
+                  <div style={{ position: "relative", bottom: "30px" }}>
+                    <div className="head"> {item.review4}</div>
+                    <div className="_reviewUserName" title="rama">
+                      by rama on Oct 31, 2021
+                    </div>
+                    <span className="verifiedname">
+                      <i className="filled2"></i>
+                      Verified Buyer
+                    </span>
+                    <p className="filled3">
+                      {" "}
+                      It is very nice comfortable..I liked it
+                    </p>
+                    <div className="review">
+                      0 People found this review helpful. Was this review
+                      helpful?
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr></hr>
+              <img
+                style={{ width: "50px", position: "relative", top: "60px" }}
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaWBWJ_C2F1wDn97QqFPTOreBip4gYhfQ3MWec_ecaRCuuJ0ghOX2fSmLVRaHmraFaPs8&usqp=CAU"
+                alt=""
+              />
+              <div className="text">
+                <div className="user-review">
+                  <div className="rating">
+                    <Rating />
+                  </div>
+                  <div style={{ position: "relative", bottom: "30px" }}>
+                    <div className="head"> {item.review5}</div>
+                    <div className="_reviewUserName" title="rama">
+                      by rama on Oct 31, 2021
+                    </div>
+                    <span className="verifiedname">
+                      <i className="filled2"></i>
+                      Verified Buyer
+                    </span>
+                    <p className="filled3">
+                      {" "}
+                      It is very nice comfortable..I liked it
+                    </p>
+                    <div className="review">
+                      0 People found this review helpful. Was this review
+                      helpful?
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             {/* </ul> */}
             {/* </div> */}
           </>

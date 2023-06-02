@@ -1,0 +1,80 @@
+.text {
+  margin-left: 94px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.user-review {
+  padding: 10px 0px;
+}
+
+.rating {
+  font-size: 18px;
+  color: #ececec;
+  display: block;
+  padding: 0 0 6px 0;
+}
+
+.head {
+  font-size: 15px;
+  line-height: 18px;
+  white-space: pre-wrap;
+  color: #333333;
+}
+
+._reviewUserName {
+  height: 14px;
+  display: inline-block;
+  line-height: 13px;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 13px;
+  white-space: nowrap;
+  color: #999999;
+  margin-top: 5px;
+}
+
+.verifiedname {
+  font-size: 13px;
+  vertical-align: text-top;
+  border-left: solid 1px #efefef;
+  padding-left: 8px;
+  color: #ababab !important;
+}
+
+.filled2 {
+  padding: 8px 0px 2px 0px;
+  color: #61a638;
+  margin-right: 5px;
+  width: 1em;
+  display: inline-block;
+  text-align: center;
+  display: inline-block;
+  font-family: "snapdeal_font2";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.filled3 {
+  font-size: 13px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #666;
+  margin-top: 15px;
+}
+
+.review {
+  font-size: 13px;
+  padding: 0px;
+  height: 36px;
+  line-height: 36px;
+  color: #999999;
+}
