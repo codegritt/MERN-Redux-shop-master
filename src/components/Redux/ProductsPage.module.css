@@ -1,0 +1,71 @@
+.productsmain {
+  padding: 30px;
+  padding-top: 0;
+  background-color: whitesmoke;
+}
+
+.productsmainbread {
+  padding-left: 50px;
+}
+
+.trendingi {
+  margin-top: 7px;
+  vertical-align: middle;
+  display: inline-block;
+  color: #999999;
+  width: 1em;
+  text-align: center;
+  display: inline-block;
+  font-family: "snapdeal_font2";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.trendingis {
+  color: #999;
+  font-size: 13px;
+  margin-left: 4px;
+  padding-left: 5px;
+}
+
+.trendlist {
+  line-height: 23px;
+  border-radius: 3px;
+  color: gray;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  padding: 4px 20px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -ms-border-radius: 3px;
+  margin-left: 10px;
+  display: inline-block;
+  font-size: 13px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.leftwrapper {
+  position: static;
+  top: 45px;
+  backface-visibility: hidden;
+  border: 1px solid gray;
+  width: 20%;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.leftwrapperr {
+  background: #fff;
+  border: 1px solid gray;
+  padding: 17px;
+  margin-right: 2px;
+  overflow: hidden;
+}

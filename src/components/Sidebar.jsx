@@ -36,6 +36,7 @@ import Dropdownimage2 from "./DropdownEg.module.css";
 import Dropdownimage3 from "./DropdownEg.module.css";
 import Dropdownimage4 from "./DropdownEg.module.css";
 import Dropdownimage5 from "./DropdownEg.module.css";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -43,14 +44,16 @@ const Sidebar = () => {
       <div className={Sidebarpanel.sidebar}>
         <h4 className={sideheader.sidebarHeader}>TOP CATEGORIES</h4>
         <div className={Dropdown1.dropdown1}>
-          <button className={Dropbtn1.dropbtn1}>
-            <img
-              className={Dropdownimage1.dropdownimage1}
-              src="https://i3.sdlcdn.com/img/leftnavicon09/30x30mobile4.png"
-              alt=""
-            />
-            Men's fashion
-          </button>
+          <Link to="/productspage">
+            <button className={Dropbtn1.dropbtn1}>
+              <img
+                className={Dropdownimage1.dropdownimage1}
+                src="https://i3.sdlcdn.com/img/leftnavicon09/30x30mobile4.png"
+                alt=""
+              />
+              Men's fashion
+            </button>
+          </Link>
           <div className={Dropdown_content1.dropdown_content1}>
             <h4 className={sideheader1.sidebarHeader1}>MORE CATEGORIES</h4>
 

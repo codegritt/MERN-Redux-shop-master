@@ -7,7 +7,7 @@
   color: gray;
   cursor: pointer;
   line-height: 30px;
-  padding: 5px;
+  padding: 0px;
   padding-left: 10px;
 }
 
@@ -20,7 +20,7 @@
   border: none;
   cursor: pointer;
   line-height: 0.3em;
-  width: 185px;
+  width: 186px;
   text-align: left;
 }
 
@@ -85,7 +85,7 @@
   display: none;
   position: absolute;
   left: 200px;
-  top: -102px;
+  top: -90px;
   background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -146,7 +146,7 @@
   display: none;
   position: absolute;
   left: 190px;
-  top: -158px;
+  top: -147px;
   background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -206,7 +206,7 @@
   display: none;
   position: absolute;
   left: 190px;
-  top: -215px;
+  top: -204px;
   background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -268,7 +268,7 @@
   display: none;
   position: absolute;
   left: 190px;
-  top: -272px;
+  top: -262px;
   background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);

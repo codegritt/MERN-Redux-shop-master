@@ -26,6 +26,7 @@ import CartProvider from "./components/Redux2/CartContext";
 import Loginbase from "./Pages/Loginbase";
 import Registerbase from "./Pages/Registerbase";
 import SingleProductPage from "./components/Redux/SingleProductPage";
+import ProductsPage from "./components/Redux/ProductsPage";
 
 export const App = () => {
   return (
@@ -63,9 +64,13 @@ export const App = () => {
               <Route path="/store" element={<Store />} />
               <Route path="/success" element={<Success />} />
               <Route path="/cancel" element={<Cancel />} />
-              <Route path="/loginbase" element={<Loginbase/>} />
-              <Route path="/registerbase" element={<Registerbase/>} />
-              <Route path="/singleproductpage" element={<SingleProductPage/>} />
+              <Route path="/loginbase" element={<Loginbase />} />
+              <Route path="/registerbase" element={<Registerbase />} />
+              <Route
+                path="/singleproductpage"
+                element={<SingleProductPage />}
+              />
+              <Route path="/productspage" element={<ProductsPage />} />
             </Routes>
           </div>
         </BrowserRouter>
