@@ -149,6 +149,7 @@ const ProductsPageList = () => {
           </Space>
         </Space>
       </div>
+      <hr></hr>
       <div className={Gridlist.gridlist}>
         {filteredData.map(({ id, price, img, title }) => (
           <div className={Gridlistcard.gridlistcard}>
