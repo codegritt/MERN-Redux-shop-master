@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Breadcrumbsmain from "./CheckoutPage.module.css";
 import Productsmain from "./ProductsPage.module.css";
@@ -12,10 +12,14 @@ import Trendlist from "./ProductsPage.module.css";
 import Leftwrapper from "./ProductsPage.module.css";
 import Leftwrapperr from "./ProductsPage.module.css";
 import { Collapse } from "antd";
+import { Slider } from "antd";
+import Rating from "./Rating";
 
 const { Panel } = Collapse;
 
 const ProductsPage = () => {
+  const [disabled, setDisabled] = useState(false);
+
   return (
     <div className={Productsmain.productsmain}>
       <div className={Productsmainbread.productsmainbread}>
@@ -257,6 +261,7 @@ const ProductsPage = () => {
             </Panel>
           </Collapse>
         </div>
+
         <div className={Leftwrapperr.leftwrapperr}>
           <Collapse defaultActiveKey={["4"]} ghost>
             <Panel
@@ -268,43 +273,188 @@ const ProductsPage = () => {
               header="Price"
               key="4"
             >
-              <hr></hr>
               <div
                 class="filter-inner"
                 data-name="Price"
                 data-filter-type="slider"
               >
-                <div class="clear">
-                  <span class="from-price-text">Rs. 360</span>
-                  <span class="to-price-text">Rs. 2799</span>
+                <Slider range defaultValue={[20, 50]} disabled={disabled} />
+
+                <div style={{ clear: "both" }} class="clear">
+                  <span
+                    style={{ fontSize: "12px", textAlign: "left" }}
+                    class="from-price-text"
+                  >
+                    Rs. 360
+                  </span>
+                  <span
+                    style={{
+                      fontSize: "12px",
+                      textAlign: "left",
+                      float: "right",
+                    }}
+                    class="to-price-text"
+                  >
+                    Rs. 2799
+                  </span>
                 </div>
-                <div class="price-input">
-                  <div class="price-text-box">
+                <div
+                  style={{
+                    width: "34%",
+                    float: "left",
+                    textAlign: "center",
+                    padding: "8px 0",
+                    border: "0",
+                  }}
+                  class="price-input"
+                >
+                  <div
+                    style={{
+                      position: "relative",
+                      top: "20px",
+                      height: "10px",
+                    }}
+                    class="price-text-box"
+                  >
                     <input
+                      style={{
+                        paddingLeft: "25px",
+                        lineHeight: "16px",
+                        marginBottom: "5px",
+                        border: "1px solid #dbdbdb",
+                        width: "60%",
+                        padding: "10px 1px",
+                        borderRadius: "3px",
+                        fontSize: "12px",
+                        height: "15px",
+                        color: "#9e9e9e",
+                      }}
                       type="text"
                       name="fromVal"
                       value="360"
                       class="input-filter"
                       className="form-control"
                     />
-                    <span class="rsText">Rs.</span>
+                    {/* <span className={qweqweq.qweqweq}>Rs.</span> */}
                   </div>
                 </div>
-                <span class="dash"> - </span>
+
                 <div class="price-input">
                   <div class="price-text-box">
                     <input
+                      style={{
+                        paddingLeft: "35px",
+                        lineHeight: "16px",
+                        marginBottom: "5px",
+                        border: "1px solid #dbdbdb",
+                        width: "20%",
+                        padding: "10px 1px",
+                        borderRadius: "3px",
+                        fontSize: "12px",
+                        height: "15px",
+                        color: "#9e9e9e",
+                        position: "relative",
+                        left: "15px",
+                        top: "7px",
+                      }}
                       type="text"
                       name="toVal"
                       class="input-filter"
                       value="2799"
                       className="form-control"
                     />
-                    <span class="rsText">Rs.</span>
+                    {/* <span className={qweqweqq.qweqweqq}>Rs.</span> */}
                   </div>
                 </div>
-                <div class="price-go-arrow btn btn-line btn-theme-secondary">
+                <div
+                  style={{
+                    position: "relative",
+                    float: "right",
+                    left: "20px",
+                    bottom: "35px",
+                  }}
+                  class="price-go-arrow btn btn-line btn-theme-secondary"
+                >
                   GO
+                </div>
+              </div>
+            </Panel>
+          </Collapse>
+        </div>
+        <div className={Leftwrapperr.leftwrapperr}>
+          <Collapse defaultActiveKey={["5"]} ghost>
+            <Panel
+              style={{
+                fontWeight: "bold",
+                color: "lightgray",
+                fontSize: "13px",
+              }}
+              header="Customer Rating"
+              key="5"
+            >
+              <div
+                style={{
+                  lineHeight: "10px",
+
+                  paddingRight: "20px",
+                }}
+              >
+                <div style={{ display: "flex" }}>
+                  <Rating />
+
+                  <span
+                    style={{
+                      textAlign: "end",
+                      fontWeight: "bold",
+                      color: "gray",
+                      fontSize: "13px",
+                    }}
+                  >
+                    (314)
+                  </span>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  <Rating />
+
+                  <span
+                    style={{
+                      textAlign: "end",
+                      fontWeight: "bold",
+                      color: "gray",
+                      fontSize: "13px",
+                    }}
+                  >
+                    (1768)
+                  </span>
+                </div>
+                <div style={{ display: "flex" }}>
+                  <Rating />
+
+                  <span
+                    style={{
+                      textAlign: "end",
+                      fontWeight: "bold",
+                      color: "gray",
+                      fontSize: "13px",
+                    }}
+                  >
+                    (7984)
+                  </span>
+                </div>
+                <div style={{ display: "flex" }}>
+                  <Rating />
+
+                  <span
+                    style={{
+                      textAlign: "end",
+                      fontWeight: "bold",
+                      color: "gray",
+                      fontSize: "13px",
+                    }}
+                  >
+                    (123)
+                  </span>
                 </div>
               </div>
             </Panel>

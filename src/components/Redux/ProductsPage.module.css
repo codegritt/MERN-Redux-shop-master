@@ -64,8 +64,28 @@
 
 .leftwrapperr {
   background: #fff;
-  border: 1px solid gray;
+
   padding: 17px;
   margin-right: 2px;
   overflow: hidden;
+}
+
+.qweqweq {
+  position: relative;
+  bottom: 53px;
+  right: 20px;
+  font-size: 13px;
+  color: #9e9e9e;
+  margin-right: 3px;
+  padding-left: 3px;
+}
+
+.qweqweqq {
+  position: relative;
+  bottom: 27px;
+  left: 85px;
+  font-size: 13px;
+  color: #9e9e9e;
+  margin-right: 3px;
+  padding-left: 3px;
 }
