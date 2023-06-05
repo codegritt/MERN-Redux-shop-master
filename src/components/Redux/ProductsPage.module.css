@@ -89,3 +89,14 @@
   margin-right: 3px;
   padding-left: 3px;
 }
+
+.ProductsPageListitem {
+  position: absolute;
+  /* bottom: 1130px;
+  left: 330px; */
+  top: 190px;
+  right: 0px;
+  width: 75%;
+  padding: 10px;
+  border: 1px solid gray;
+}

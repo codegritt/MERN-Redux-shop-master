@@ -1,0 +1,47 @@
+.gridlist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  min-height: 50vh;
+  justify-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.gridlistcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.gridlistcard:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
+.gridlistcardimg {
+  width: 230px;
+  height: 230px;
+}
+
+.gridlistcardtitle {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: gray;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.gridheader {
+  color: gray;
+  font-size: 20px;
+}
+
+.dropstyle {
+  color: gray;
+  height: 5px;
+  font-size: 13px;
+}
