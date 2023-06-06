@@ -51,7 +51,7 @@ export class SingleProductPage extends Component {
         return (
           <>
             {" "}
-            <li className="collection-item avatar" key={item.id}>
+            <div className="collection-item avatar" key={item.id}>
               <div className={Prod_image.prod_image}>
                 <img
                   style={{ width: "420px" }}
@@ -222,7 +222,7 @@ export class SingleProductPage extends Component {
                   </button>
                 </div>
               </div>
-            </li>
+            </div>
           </>
         );
       })
@@ -241,7 +241,7 @@ export class SingleProductPage extends Component {
 
     return (
       <>
-        <ul
+        <div
           style={{
             width: "105%",
             height: "470px",
@@ -251,7 +251,7 @@ export class SingleProductPage extends Component {
           className="collection"
         >
           {addedItems}
-        </ul>
+        </div>
 
         <div style={{ position: "relative", top: "1000px" }}>
           <div

@@ -30,14 +30,17 @@ class ReduxHome extends Component {
       return (
         <div className={Reduxhome_card.reduxhome_card} key={item.id}>
           <div className={Reduxhome_image.reduxhome_image}>
-            <Link  onClick={() => {
+            <Link
+              onClick={() => {
                 this.handleClick(item.id);
-              }} to="/singleproductpage">
-            <img
-              className={Reduxhome_image.reduxhome_image}
-              src={item.img}
-              alt={item.title}
-            />
+              }}
+              to="/singleproductpage"
+            >
+              <img
+                className={Reduxhome_image.reduxhome_image}
+                src={item.img}
+                alt={item.title}
+              />
             </Link>
             <span className={Reduxhome_title.reduxhome_title}>
               {item.title}
