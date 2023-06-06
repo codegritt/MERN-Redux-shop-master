@@ -56,7 +56,6 @@
   position: static;
   top: 45px;
   backface-visibility: hidden;
-  border: 1px solid gray;
   width: 20%;
   margin-left: 50px;
   margin-top: 10px;
@@ -98,6 +97,5 @@
   right: 0px;
   width: 75%;
   padding: 10px;
-  border: 1px solid gray;
   background-color: white;
 }

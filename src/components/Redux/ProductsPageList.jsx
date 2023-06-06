@@ -15,6 +15,11 @@ import { DownOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Button, Dropdown, Space } from "antd";
 import Dropstyle from "./ProductsPageList.module.css";
+import Footer__body from "../Home.module.css";
+import Footer1 from "../Footer1";
+import Footer2 from "../Footer2";
+import Footer3 from "../Footer3";
+import Footer4 from "../Footer4";
 
 const ProductsPageList = () => {
   const items: MenuProps["items"] = [
@@ -104,78 +109,101 @@ const ProductsPageList = () => {
     showEntireInventory,
     showFastDeliveryOnly
   );
+
   return (
-    <div>
-      <div style={{ display: "flex" }}>
-        <p className={Gridheader.gridheader}>
-          {" "}
-          Sports shoes for men (4978 Items) |
-        </p>
-        <FontAwesomeIcon
-          style={{
-            color: "gray",
-            fontSize: "13px",
-            position: "relative",
-            left: "30px",
-            top: "10px",
-          }}
-          icon={faMagnifyingGlass}
-        />
-        <div>
-          <input
+    <>
+      <div>
+        <div style={{ display: "flex" }}>
+          <p className={Gridheader.gridheader}>
+            {" "}
+            Sports shoes for men (4978 Items) |
+          </p>
+          <FontAwesomeIcon
             style={{
-              height: "30px",
+              color: "gray",
               fontSize: "13px",
               position: "relative",
-              top: "0px",
-              right: "30px",
-              marginLeft: "30px",
-              paddingLeft: "40px",
-              width: "200px",
-              borderRadius: "3px",
+              left: "30px",
+              top: "10px",
             }}
-            className="form-control"
-            placeholder="Search within category"
+            icon={faMagnifyingGlass}
           />
-        </div>
-        <Space direction="vertical">
-          <Space wrap>
-            <Dropdown menu={{ items }} placement="bottomLeft">
-              <Button>
-                Sort by{" "}
-                <DownOutlined style={{ position: "relative", bottom: "3px" }} />
-              </Button>
-            </Dropdown>
-          </Space>
-        </Space>
-      </div>
-      <hr></hr>
-      <div className={Gridlist.gridlist}>
-        {filteredData.map(({ id, price, img, title }) => (
-          <div className={Gridlistcard.gridlistcard}>
-            <li
+          <div>
+            <input
               style={{
-                listStyle: "none",
+                height: "30px",
+                fontSize: "13px",
+                position: "relative",
+                top: "0px",
+                right: "30px",
+                marginLeft: "30px",
+                paddingLeft: "40px",
+                width: "200px",
+                borderRadius: "3px",
               }}
-              key={id}
-            >
-              <img
-                src={img}
-                alt={img}
-                className={Gridlistcardimg.gridlistcardimg}
-              />
-              <div className={Gridlistcardtitle.gridlistcardtitle}>{title}</div>
-              <div className={Gridlistcardtitle.gridlistcardtitle}>
-                Price: {price}$
-                <p>
-                  <Rating />
-                </p>
-              </div>
-            </li>
+              className="form-control"
+              placeholder="Search within category"
+            />
           </div>
-        ))}
+          <Space direction="vertical">
+            <Space wrap>
+              <Dropdown menu={{ items }} placement="bottomLeft">
+                <Button>
+                  Sort by{" "}
+                  <DownOutlined
+                    style={{ position: "relative", bottom: "3px" }}
+                  />
+                </Button>
+              </Dropdown>
+            </Space>
+          </Space>
+        </div>
+        <hr></hr>
+        <div className={Gridlist.gridlist}>
+          {filteredData.map(({ id, price, img, title }) => (
+            <div className={Gridlistcard.gridlistcard}>
+              <li
+                style={{
+                  listStyle: "none",
+                }}
+                key={id}
+              >
+                <img
+                  src={img}
+                  alt={img}
+                  className={Gridlistcardimg.gridlistcardimg}
+                />
+
+                <div className={Gridlistcardtitle.gridlistcardtitle}>
+                  {title}
+                </div>
+                <div className={Gridlistcardtitle.gridlistcardtitle}>
+                  Price: {price}$
+                  <p>
+                    <Rating />
+                  </p>
+                </div>
+              </li>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+      <div
+        style={{
+          position: "relative",
+          right: "300px",
+          top: "1000px",
+          width: "130%",
+        }}
+      >
+        <div className={Footer__body.footer__body}>
+          <Footer1 />
+          <Footer4 />
+          <Footer2 />
+          <Footer3 />
+        </div>
+      </div>
+    </>
   );
 };
 

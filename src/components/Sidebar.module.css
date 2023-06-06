@@ -1,6 +1,6 @@
 .sidebar {
   position: relative;
-  bottom: 40px;
+  bottom: 5px;
   flex: 0.15;
   text-align: center;
   height: fit-content;

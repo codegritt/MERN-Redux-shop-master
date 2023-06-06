@@ -2,6 +2,7 @@
   background-color: whitesmoke;
   align-items: center;
   flex-direction: column;
+  height: 80px;
 }
 
 .app__body {
