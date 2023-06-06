@@ -112,7 +112,15 @@ const ProductsPageList = () => {
 
   return (
     <>
-      <div>
+      <div
+        style={{
+          backgroundColor: "whitesmoke",
+          position: "relative",
+          bottom: "43px",
+          right: "5px",
+          padding: "10px",
+        }}
+      >
         <div style={{ display: "flex" }}>
           <p className={Gridheader.gridheader}>
             {" "}

@@ -103,11 +103,7 @@ class Cart extends Component {
     );
     return (
       <>
-        <div
-          style={{
-            backgroundColor: "whitesmoke",
-          }}
-        >
+        <div>
           <Sidebar />
 
           <div className={Cartcontainer.cartcontainer}>

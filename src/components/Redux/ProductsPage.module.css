@@ -1,7 +1,6 @@
 .productsmain {
   padding: 30px;
   padding-top: 0;
-  background-color: whitesmoke;
 }
 
 .productsmainbread {
@@ -39,7 +38,7 @@
   line-height: 23px;
   border-radius: 3px;
   color: gray;
-  background-color: #fff;
+  background-color: whitesmoke;
   border: 1px solid #e7e7e7;
   padding: 4px 20px;
   -moz-border-radius: 3px;
@@ -62,7 +61,7 @@
 }
 
 .leftwrapperr {
-  background: #fff;
+  background: whitesmoke;
 
   padding: 17px;
   margin-right: 2px;
