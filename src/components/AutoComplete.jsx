@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import Autocompletemod from "./AutoComplete.module.css";
 import Suggestionsmod from "./AutoComplete.module.css";
 import Sugglist from "./AutoComplete.module.css";
