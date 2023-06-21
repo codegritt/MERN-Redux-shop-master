@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ReduxHome from "./components/Redux/ReduxHome";
 import Cart from "./components/Redux/Cart";
@@ -48,7 +48,7 @@ export const App = () => {
               <SupportEngine />
             </div>
 
-            {/* <Navbar /> */}
+          
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="/login" element={<Login />}></Route>
