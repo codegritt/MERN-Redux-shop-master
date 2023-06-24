@@ -31,18 +31,7 @@ function Header2() {
         </Link>
 
         <div className={headerSearch.header__search}>
-          {/* <input
-            style={{
-              height: "20px",
-              position: "relative",
-              top: "0px",
-              fontSize: "15px",
-            }}
-            className="form-control"
-            type="text"
-            placeholder="Search for products & brands"
-          /> */}
-
+        
           <Autocomplete data={autoCompleteData} />
         </div>
 
