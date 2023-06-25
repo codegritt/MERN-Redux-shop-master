@@ -36,7 +36,6 @@ export default function HamburgerMenu() {
       </div>
 
       <div className={Dropdown_content1Ham.dropdown_content1Ham}>
-        {/* <div className={SidebarwholeHam.sidebarwholeham}> */}
         <div className={SidebarpanelHam.sidebarHam}>
           <h4 className={sideheader.sidebarHeader}>TOP CATEGORIES</h4>
           <div className={Dropdown1.dropdown1}>
