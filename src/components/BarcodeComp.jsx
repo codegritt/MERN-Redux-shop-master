@@ -11,6 +11,7 @@ function BarcodeComp() {
     <>
       <>
         <div class={Barcode.nav_bottom_barcode}>
+          
           <div class={Barcodeimg.barCodImg}>
             <img
               className={Barimage.barimage}
