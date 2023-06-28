@@ -42,14 +42,7 @@ class CartModal extends Component {
   render() {
     return (
       <div>
-        {/* <span
-          className={CartTextSpan.cartTextSpan}
-          onClick={this.onClickButton}
-        >
-          Cart
-          <ShoppingCartIcon className={Carticonn.carticonn} />
-         
-        </span> */}
+   
 
         <Link className={CartTextSpan.cartTextSpan} to="/cart">
           My Cart
