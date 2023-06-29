@@ -3,7 +3,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* height: 500px;*/
   width: 70%;
   background: white;
   border-radius: 5px;
@@ -15,7 +14,7 @@
   color: gray;
 }
 
-\ .overlay__ {
+ .overlay__ {
   position: fixed;
   top: 0;
   left: 0;
